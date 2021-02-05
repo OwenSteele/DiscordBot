@@ -1,0 +1,168 @@
+2021-02-05 16:03:09.750 +00:00 [WRN] 
+
+
+
+2021-02-05 16:03:09.761 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 16:03:09.775 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 16:03:09.907 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 16:03:21.220 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!opoints <@!365571845141037058>   10"
+2021-02-05 16:03:21.221 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 16:03:21.224 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 16:03:21.225 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 16:03:21.235 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:03:21.242 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 16:03:21.566 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 16:03:22.315 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9
+2021-02-05 16:03:29.930 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-05 16:03:29.936 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 16:03:29.936 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:9 RhythmHelper.Data.Entities.Guild
+2021-02-05 16:03:29.937 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 16:03:33.535 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:03:33.538 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 16:03:40.402 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 16:03:56.420 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:04:01.304 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7 RhythmHelper.Data.Entities.User
+2021-02-05 16:04:09.051 +00:00 [WRN] 
+
+
+
+2021-02-05 16:04:09.063 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 16:04:09.077 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 16:04:09.218 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 16:05:22.339 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!opoints <@!365571845141037058> r   10"
+2021-02-05 16:05:22.339 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 16:05:22.342 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 16:05:22.343 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 16:05:22.353 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:05:22.360 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 16:05:22.681 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 16:05:23.402 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11
+2021-02-05 16:05:23.404 +00:00 [INF] Exe Void MoveNext() Thread:11
+2021-02-05 16:05:23.409 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:8 RhythmHelper.Data.Entities.User
+2021-02-05 16:05:23.409 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:8 RhythmHelper.Data.Entities.Guild
+2021-02-05 16:05:23.409 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 16:05:23.409 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:05:23.412 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:13 RhythmHelper.Data.Entities.User
+2021-02-05 16:05:23.412 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 16:05:23.412 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:05:23.413 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:13 RhythmHelper.Data.Entities.User
+2021-02-05 16:05:23.414 +00:00 [INF] 0Exe [Commands] AwardOPoints() Thread:7
+2021-02-05 16:05:23.414 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 16:05:23.414 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 "Must enter a whole number"
+2021-02-05 16:05:34.147 +00:00 [DBG]         ---****2 CMD [Bot] Thread:12 "!!opoints <@!365571845141037058>  10"
+2021-02-05 16:05:34.147 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:12
+2021-02-05 16:05:34.147 +00:00 [INF] 2Exe [Commands] NewCommand() Thread:12
+2021-02-05 16:05:34.147 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:12
+2021-02-05 16:05:34.148 +00:00 [INF] Exe Void MoveNext() Thread:12
+2021-02-05 16:05:34.149 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:14
+2021-02-05 16:05:34.150 +00:00 [INF] Exe Void MoveNext() Thread:14
+2021-02-05 16:05:34.151 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11 RhythmHelper.Data.Entities.User
+2021-02-05 16:05:34.153 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:11 RhythmHelper.Data.Entities.Guild
+2021-02-05 16:05:34.153 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:12
+2021-02-05 16:05:34.154 +00:00 [INF] Exe Void MoveNext() Thread:12
+2021-02-05 16:05:34.155 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:13 RhythmHelper.Data.Entities.User
+2021-02-05 16:05:34.155 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:12
+2021-02-05 16:05:34.155 +00:00 [INF] Exe Void MoveNext() Thread:12
+2021-02-05 16:05:34.156 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:13 RhythmHelper.Data.Entities.User
+2021-02-05 16:05:34.156 +00:00 [INF] 2Exe [Commands] AwardOPoints() Thread:12
+2021-02-05 16:05:34.157 +00:00 [INF] Exe [GetInfo] UpdateUserAsync Thread:12
+2021-02-05 16:05:34.158 +00:00 [INF] Exe Void Update[T](T) Thread:12
+2021-02-05 16:05:34.164 +00:00 [INF] Exe Void MoveNext() Thread:12
+2021-02-05 16:05:34.238 +00:00 [DBG] Rtn [GetInfo] UpdateUserAsync Thread:14 "changes saved"
+2021-02-05 16:05:34.238 +00:00 [INF] Exe Void MoveNext() Thread:14
+2021-02-05 16:05:34.239 +00:00 [DBG] 2Rtn [Commands] NewCommand() Thread:12 returning command.
+2021-02-05 16:05:34.239 +00:00 [DBG]         ---****2 MSG [Bot] Thread:12 "***Just Another Contract Killer*** has been awarded 10 Ø points, and now has a total of: 10"
+2021-02-05 16:20:56.111 +00:00 [WRN] 
+
+
+
+2021-02-05 16:20:56.122 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 16:20:56.136 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 16:20:56.268 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 16:21:14.122 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!opoints <@!365571845141037058> 10"
+2021-02-05 16:21:14.123 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 16:21:14.125 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 16:21:14.126 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 16:21:14.137 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:21:14.143 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 16:21:14.458 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 16:21:15.165 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9
+2021-02-05 16:21:15.167 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-05 16:21:15.171 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 16:21:15.172 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:6 RhythmHelper.Data.Entities.Guild
+2021-02-05 16:21:15.172 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 16:21:15.172 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:21:15.175 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 16:21:15.175 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 16:21:15.176 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:21:15.177 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 16:21:15.177 +00:00 [INF] 0Exe [Commands] AwardOPoints() Thread:7
+2021-02-05 16:21:15.178 +00:00 [INF] Exe [GetInfo] UpdateUserAsync Thread:7
+2021-02-05 16:21:15.179 +00:00 [INF] Exe Void Update[T](T) Thread:7
+2021-02-05 16:21:15.184 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:21:15.258 +00:00 [DBG] Rtn [GetInfo] UpdateUserAsync Thread:4 "changes saved"
+2021-02-05 16:21:15.259 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 16:21:15.262 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 16:21:15.262 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 "***Just Another Contract Killer*** has been awarded 10 Ø points, and now has a total of: 20"
+2021-02-05 16:21:32.589 +00:00 [DBG]         ---****2 CMD [Bot] Thread:7 "!!resetopoints @everyone"
+2021-02-05 16:21:32.589 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 16:21:32.590 +00:00 [INF] 2Exe [Commands] NewCommand() Thread:7
+2021-02-05 16:21:32.590 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 16:21:32.590 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:21:32.592 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-05 16:21:32.592 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 16:21:32.596 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 16:21:32.596 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:6 RhythmHelper.Data.Entities.Guild
+2021-02-05 16:21:32.596 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 16:21:32.596 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:21:32.597 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 16:21:32.598 +00:00 [INF] 2Exe [Commands] ResetOPoints() Thread:7
+2021-02-05 16:21:32.598 +00:00 [INF] Exe [GetInfo] UpdateUserAsync Thread:7
+2021-02-05 16:21:32.598 +00:00 [INF] Exe Void Update[T](T) Thread:7
+2021-02-05 16:21:32.598 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:21:32.603 +00:00 [DBG] Rtn [GetInfo] UpdateUserAsync Thread:4 "changes saved"
+2021-02-05 16:21:32.603 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 16:21:32.604 +00:00 [DBG] 2Rtn [Commands] ResetOPoints() Thread:7 "multiple opoints"
+2021-02-05 16:21:32.604 +00:00 [DBG] 2Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 16:21:32.604 +00:00 [DBG]         ---****2 MSG [Bot] Thread:7 "***Just Another Contract Killer***'s Ø points have been set to 0 again :disappointed_relieved: (from: 20) [CRLF] "
+2021-02-05 16:21:39.766 +00:00 [DBG]         ---****4 CMD [Bot] Thread:7 "rip"
+2021-02-05 16:21:39.766 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 16:21:39.766 +00:00 [INF] 4Exe [Commands] NewCommand() Thread:7
+2021-02-05 16:21:39.766 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 16:21:39.767 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:21:39.769 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:15
+2021-02-05 16:21:39.769 +00:00 [INF] Exe Void MoveNext() Thread:15
+2021-02-05 16:21:39.770 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:16 RhythmHelper.Data.Entities.User
+2021-02-05 16:21:39.770 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:16 RhythmHelper.Data.Entities.Guild
+2021-02-05 16:21:52.663 +00:00 [DBG]         ---****5 CMD [Bot] Thread:7 "running on my laptop is cauing the issues"
+2021-02-05 16:21:52.663 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 16:21:52.663 +00:00 [INF] 5Exe [Commands] NewCommand() Thread:7
+2021-02-05 16:21:52.663 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 16:21:52.664 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 16:21:52.666 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9
+2021-02-05 16:21:52.666 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-05 16:21:52.667 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11 RhythmHelper.Data.Entities.User
+2021-02-05 16:21:52.667 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:11 RhythmHelper.Data.Entities.Guild
+2021-02-05 16:23:55.431 +00:00 [DBG]         ---****6 CMD [Bot] Thread:20 "!!opoints <@!365571845141037058>  10"
+2021-02-05 16:23:55.431 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:20
+2021-02-05 16:23:55.431 +00:00 [INF] 6Exe [Commands] NewCommand() Thread:20
+2021-02-05 16:23:55.431 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:20
+2021-02-05 16:23:55.431 +00:00 [INF] Exe Void MoveNext() Thread:20
+2021-02-05 16:23:55.441 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:19
+2021-02-05 16:23:55.464 +00:00 [INF] Exe Void MoveNext() Thread:19
+2021-02-05 16:23:55.466 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:22 RhythmHelper.Data.Entities.User
+2021-02-05 16:23:55.466 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:22 RhythmHelper.Data.Entities.Guild
+2021-02-05 16:23:55.466 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:20
+2021-02-05 16:23:55.466 +00:00 [INF] Exe Void MoveNext() Thread:20
+2021-02-05 16:23:55.468 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:19 RhythmHelper.Data.Entities.User
+2021-02-05 16:23:55.468 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:20
+2021-02-05 16:23:55.468 +00:00 [INF] Exe Void MoveNext() Thread:20
+2021-02-05 16:23:55.469 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:22 RhythmHelper.Data.Entities.User
+2021-02-05 16:23:55.469 +00:00 [INF] 6Exe [Commands] AwardOPoints() Thread:20
+2021-02-05 16:23:55.469 +00:00 [INF] Exe [GetInfo] UpdateUserAsync Thread:20
+2021-02-05 16:23:55.470 +00:00 [INF] Exe Void Update[T](T) Thread:20
+2021-02-05 16:23:55.470 +00:00 [INF] Exe Void MoveNext() Thread:20
+2021-02-05 16:23:55.472 +00:00 [DBG] Rtn [GetInfo] UpdateUserAsync Thread:19 "changes saved"
+2021-02-05 16:23:55.472 +00:00 [INF] Exe Void MoveNext() Thread:19
+2021-02-05 16:23:55.473 +00:00 [DBG] 6Rtn [Commands] NewCommand() Thread:20 returning command.
+2021-02-05 16:23:55.473 +00:00 [DBG]         ---****6 MSG [Bot] Thread:20 "***Ø_*** has been awarded 10 Ø points, and now has a total of: 10"

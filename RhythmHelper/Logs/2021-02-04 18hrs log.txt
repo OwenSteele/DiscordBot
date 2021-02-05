@@ -1,0 +1,94 @@
+2021-02-04 18:09:20.861 +00:00 [INF] Ctor Void .ctor() 
+2021-02-04 18:09:20.874 +00:00 [INF] Exe Void .ctor() 
+2021-02-04 18:09:49.903 +00:00 [INF] Ctor Void .ctor(Discord.WebSocket.SocketMessage, RhythmHelper.GetInfo ByRef, RhythmHelper.BotMethods) 
+2021-02-04 18:09:49.905 +00:00 [INF] Exe System.String NewCommand() 
+2021-02-04 18:09:49.907 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:09:49.917 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:09:49.924 +00:00 [INF] Exe Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) 
+2021-02-04 18:09:50.218 +00:00 [INF] Exe Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) 
+2021-02-04 18:09:51.317 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:09:51.318 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:09:59.963 +00:00 [INF] Ctor Void .ctor(Discord.WebSocket.SocketMessage, RhythmHelper.GetInfo ByRef, RhythmHelper.BotMethods) 
+2021-02-04 18:09:59.963 +00:00 [INF] Exe System.String NewCommand() 
+2021-02-04 18:09:59.964 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:09:59.964 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:09:59.969 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:09:59.970 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:10:23.611 +00:00 [INF] Ctor Void .ctor(Discord.WebSocket.SocketMessage, RhythmHelper.GetInfo ByRef, RhythmHelper.BotMethods) 
+2021-02-04 18:10:30.317 +00:00 [INF] Exe System.String NewCommand() 
+2021-02-04 18:10:32.573 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:10:36.660 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:10:43.278 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:10:43.874 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:21.199 +00:00 [INF] Ctor Void .ctor() 
+2021-02-04 18:11:21.211 +00:00 [INF] Exe Void .ctor() 
+2021-02-04 18:11:28.827 +00:00 [INF] Ctor Void .ctor(Discord.WebSocket.SocketMessage, RhythmHelper.GetInfo ByRef, RhythmHelper.BotMethods) 
+2021-02-04 18:11:28.830 +00:00 [INF] Exe System.String NewCommand() 
+2021-02-04 18:11:28.831 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:28.842 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:28.849 +00:00 [INF] Exe Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) 
+2021-02-04 18:11:29.133 +00:00 [INF] Exe Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) 
+2021-02-04 18:11:29.802 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:29.803 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:29.809 +00:00 [INF] Exe System.String ResetPrefix() 
+2021-02-04 18:11:29.809 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:29.810 +00:00 [INF] Exe Void Update[T](T) 
+2021-02-04 18:11:29.815 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:35.809 +00:00 [INF] Ctor Void .ctor(Discord.WebSocket.SocketMessage, RhythmHelper.GetInfo ByRef, RhythmHelper.BotMethods) 
+2021-02-04 18:11:35.810 +00:00 [INF] Exe System.String NewCommand() 
+2021-02-04 18:11:35.810 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:35.810 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:35.813 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:35.813 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:35.815 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:35.815 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:11:35.817 +00:00 [INF] Exe System.String ShowHelp() 
+2021-02-04 18:13:15.003 +00:00 [INF] Ctor Void .ctor() 
+2021-02-04 18:13:15.016 +00:00 [INF] Exe Void .ctor() 
+2021-02-04 18:13:18.604 +00:00 [INF] Ctor Void .ctor(Discord.WebSocket.SocketMessage, RhythmHelper.GetInfo ByRef, RhythmHelper.BotMethods) 
+2021-02-04 18:13:18.606 +00:00 [INF] Exe System.String NewCommand() en-GB
+2021-02-04 18:13:18.607 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:13:18.618 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:13:18.626 +00:00 [INF] Exe Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) 
+2021-02-04 18:13:18.916 +00:00 [INF] Exe Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) 
+2021-02-04 18:13:19.581 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:13:19.581 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:13:19.587 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:13:19.587 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:13:19.590 +00:00 [INF] Exe System.String ShowHelp() 
+2021-02-04 18:14:35.534 +00:00 [INF] Ctor Void .ctor() 
+2021-02-04 18:14:35.547 +00:00 [INF] Exe Void .ctor() 
+2021-02-04 18:14:38.964 +00:00 [INF] Ctor Void .ctor(Discord.WebSocket.SocketMessage, RhythmHelper.GetInfo ByRef, RhythmHelper.BotMethods) 
+2021-02-04 18:14:38.967 +00:00 [INF] Exe System.String NewCommand() 7
+2021-02-04 18:14:38.968 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:14:38.978 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:14:38.985 +00:00 [INF] Exe Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) 
+2021-02-04 18:14:39.277 +00:00 [INF] Exe Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) 
+2021-02-04 18:14:39.944 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:14:39.944 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:14:39.950 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:14:39.951 +00:00 [INF] Exe Void MoveNext() 
+2021-02-04 18:14:39.954 +00:00 [INF] Exe System.String ShowHelp() 
+2021-02-04 18:21:30.197 +00:00 [INF] Ctor Void .ctor() Thread:1
+2021-02-04 18:21:30.209 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-04 18:21:40.322 +00:00 [INF] Ctor Void .ctor(Discord.WebSocket.SocketMessage, RhythmHelper.GetInfo ByRef, RhythmHelper.BotMethods) Thread:7
+2021-02-04 18:21:40.325 +00:00 [INF] Exe System.String NewCommand() Thread:7
+2021-02-04 18:21:40.326 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-04 18:21:40.337 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-04 18:21:40.343 +00:00 [INF] Exe Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-04 18:21:40.629 +00:00 [INF] Exe Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-04 18:21:41.745 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-04 18:21:41.746 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-04 18:21:41.753 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-04 18:21:41.753 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-04 18:21:41.757 +00:00 [INF] Exe System.String ShowHelp() Thread:7
+2021-02-04 18:21:55.713 +00:00 [INF] Ctor Void .ctor(Discord.WebSocket.SocketMessage, RhythmHelper.GetInfo ByRef, RhythmHelper.BotMethods) Thread:7
+2021-02-04 18:21:55.713 +00:00 [INF] Exe System.String NewCommand() Thread:7
+2021-02-04 18:21:55.713 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-04 18:21:55.713 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-04 18:21:55.716 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-04 18:21:55.716 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-04 18:21:55.722 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-04 18:21:55.722 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-04 18:21:55.724 +00:00 [INF] Exe System.String DiceRoller() Thread:7
+2021-02-04 18:21:55.725 +00:00 [INF] Exe System.String GetNumberEmojis(Int32) Thread:7

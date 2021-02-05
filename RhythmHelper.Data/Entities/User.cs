@@ -16,5 +16,8 @@ namespace RhythmHelper.Data.Entities
         public string Discriminator { get; set; }
         public Guild Guild { get; set; }
         public ICollection<Role> Roles { get; set; }
+
+        public bool OPointer { get; set; }
+        public int OPoints { get; set; }
     }
 }

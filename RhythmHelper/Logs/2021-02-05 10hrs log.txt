@@ -1,0 +1,25 @@
+2021-02-05 10:32:33.364 +00:00 [WRN] 
+
+
+
+2021-02-05 10:32:33.378 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 10:32:33.399 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 10:32:33.586 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 10:32:53.001 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!help"
+2021-02-05 10:32:53.002 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 10:32:53.004 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 10:32:53.009 +00:00 [INF] StartExe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 10:32:53.022 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 10:32:53.029 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 10:32:53.358 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 10:32:54.943 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:4
+2021-02-05 10:32:54.944 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 10:32:54.951 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 10:32:54.951 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:6 RhythmHelper.Data.Entities.Guild
+2021-02-05 10:32:54.951 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 10:32:54.952 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 10:32:54.955 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 10:32:54.955 +00:00 [INF] 0Exe [Commands] ShowHelp() Thread:7
+2021-02-05 10:32:54.956 +00:00 [DBG] 0Rtn [Commands] ShowHelp() Thread:7 "Help message"
+2021-02-05 10:32:54.956 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 Thank you for using GØØ Bot, <
+2021-02-05 10:32:54.956 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 "Thank you for using GØØ Bot, <@!327478216149172225>. [CRLF] GØØ commands start with: **'!!'** e.g. **!!search** [CRLF]  [CRLF] **Current commands I can do:** [CRLF] :face_vomiting: ***'!!help'*** - shows help (also accessed with just entering the prefix)' [CRLF] :face_vomiting: ***'!!search'*** - returns search results from youtube. - *e.g. '!!search gooey robots'*' [CRLF] :face_vomiting: ***'!!searchlimit'*** - set video return limit - *e.g. !!searchlimit 7*' [CRLF] :face_vomiting: ***'!!searchrestrict'*** - set how closely a video must match the search options 'Off', 'Partial', 'Full' - *e.g. !!searchrestrict full*' [CRLF] :face_vomiting: ***'!!dice'*** - roll a dice (optional: followed by the limit) - *e.g. !!dice* = rolls with default,  - *!!dice 11* = rolls 11-sided die' [CRLF] :face_vomiting: ***'!!dicedefault'*** - set the default number of side for the diceroll command - *e.g. !!dicedefault 20*' [CRLF] :face_vomiting: ***'!!changeprefix'*** - change the prefix for the bot (must be between 1 to 3 characters long) - *e.g. !!changeprefix @@@*' [CRLF] :face_vomiting: ***'!!resetprefix'*** - reset the prefix to '!!' - does not require current prefix' [CRLF] :face_vomiting: ***'!!botfeedback'*** - give me feedback on: issues, deepest desires (for new commands), suggested changes etc.' [CRLF] "

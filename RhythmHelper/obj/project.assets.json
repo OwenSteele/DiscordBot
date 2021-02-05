@@ -526,6 +526,27 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Serilog/2.10.1-dev-01265": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/Serilog.dll": {}
+        }
+      },
+      "Serilog.Sinks.File/5.0.0-dev-00909": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.9.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Serilog.Sinks.File.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Serilog.Sinks.File.dll": {}
+        }
+      },
       "System.Collections/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1497,20 +1518,22 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "RhythmHelper.Data/1.0.0": {
+      "GooBot.Data/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "AutoMapper": "10.1.1",
           "Microsoft.EntityFrameworkCore": "5.0.2",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.2",
-          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0"
+          "Microsoft.Extensions.Configuration.Abstractions": "5.0.0",
+          "Serilog": "2.10.1-dev-01265",
+          "Serilog.Sinks.File": "5.0.0-dev-00909"
         },
         "compile": {
-          "bin/placeholder/RhythmHelper.Data.dll": {}
+          "bin/placeholder/GooBot.Data.dll": {}
         },
         "runtime": {
-          "bin/placeholder/RhythmHelper.Data.dll": {}
+          "bin/placeholder/GooBot.Data.dll": {}
         }
       }
     }
@@ -2362,6 +2385,54 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.4.3.0.nupkg.sha512",
         "runtime.native.system.nuspec"
+      ]
+    },
+    "Serilog/2.10.1-dev-01265": {
+      "sha512": "A2RHMthlCfmnp8NnceKnu6nGAxSSNmY3C0Eenzo+Iu5eOv+tJym6ZSXCU1AlVPoYv+pzfV1nNqKxZSnWxJpFiw==",
+      "type": "package",
+      "path": "serilog/2.10.1-dev-01265",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net45/Serilog.dll",
+        "lib/net45/Serilog.xml",
+        "lib/net46/Serilog.dll",
+        "lib/net46/Serilog.xml",
+        "lib/netstandard1.0/Serilog.dll",
+        "lib/netstandard1.0/Serilog.xml",
+        "lib/netstandard1.3/Serilog.dll",
+        "lib/netstandard1.3/Serilog.xml",
+        "lib/netstandard2.0/Serilog.dll",
+        "lib/netstandard2.0/Serilog.xml",
+        "lib/netstandard2.1/Serilog.dll",
+        "lib/netstandard2.1/Serilog.xml",
+        "serilog.2.10.1-dev-01265.nupkg.sha512",
+        "serilog.nuspec"
+      ]
+    },
+    "Serilog.Sinks.File/5.0.0-dev-00909": {
+      "sha512": "PvRoXJYuz0CoNv230r0WYWyofbJc2Ef1AAAKl9PE4uzm6xsmG9+mK6xOTIEEUjzAyaEre1I/nxFUocDhpJa3Ig==",
+      "type": "package",
+      "path": "serilog.sinks.file/5.0.0-dev-00909",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/icon.png",
+        "lib/net45/Serilog.Sinks.File.dll",
+        "lib/net45/Serilog.Sinks.File.pdb",
+        "lib/net45/Serilog.Sinks.File.xml",
+        "lib/netcoreapp3.0/Serilog.Sinks.File.dll",
+        "lib/netcoreapp3.0/Serilog.Sinks.File.pdb",
+        "lib/netcoreapp3.0/Serilog.Sinks.File.xml",
+        "lib/netstandard1.3/Serilog.Sinks.File.dll",
+        "lib/netstandard1.3/Serilog.Sinks.File.pdb",
+        "lib/netstandard1.3/Serilog.Sinks.File.xml",
+        "lib/netstandard2.0/Serilog.Sinks.File.dll",
+        "lib/netstandard2.0/Serilog.Sinks.File.pdb",
+        "lib/netstandard2.0/Serilog.Sinks.File.xml",
+        "serilog.sinks.file.5.0.0-dev-00909.nupkg.sha512",
+        "serilog.sinks.file.nuspec"
       ]
     },
     "System.Collections/4.3.0": {
@@ -5652,18 +5723,20 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "RhythmHelper.Data/1.0.0": {
+    "GooBot.Data/1.0.0": {
       "type": "project",
-      "path": "../RhythmHelper.Data/RhythmHelper.Data.csproj",
-      "msbuildProject": "../RhythmHelper.Data/RhythmHelper.Data.csproj"
+      "path": "../RhythmHelper.Data/GooBot.Data.csproj",
+      "msbuildProject": "../RhythmHelper.Data/GooBot.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "AutoMapper >= 10.1.1",
       "Discord.Net >= 2.3.0",
+      "GooBot.Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.2",
-      "RhythmHelper.Data >= 1.0.0"
+      "Serilog >= 2.10.1-dev-01265",
+      "Serilog.Sinks.File >= 5.0.0-dev-00909"
     ]
   },
   "packageFolders": {
@@ -5673,11 +5746,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\owenf\\source\\repos\\RhyHelp\\RhythmHelper\\RhythmHelper.csproj",
-      "projectName": "RhythmHelper",
-      "projectPath": "C:\\Users\\owenf\\source\\repos\\RhyHelp\\RhythmHelper\\RhythmHelper.csproj",
+      "projectUniqueName": "C:\\Users\\owenf\\source\\repos\\GooBotDiscord\\RhythmHelper\\GooBot.csproj",
+      "projectName": "GooBot",
+      "projectPath": "C:\\Users\\owenf\\source\\repos\\GooBotDiscord\\RhythmHelper\\GooBot.csproj",
       "packagesPath": "C:\\Users\\owenf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\owenf\\source\\repos\\RhyHelp\\RhythmHelper\\obj\\",
+      "outputPath": "C:\\Users\\owenf\\source\\repos\\GooBotDiscord\\RhythmHelper\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -5698,8 +5771,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\owenf\\source\\repos\\RhyHelp\\RhythmHelper.Data\\RhythmHelper.Data.csproj": {
-              "projectPath": "C:\\Users\\owenf\\source\\repos\\RhyHelp\\RhythmHelper.Data\\RhythmHelper.Data.csproj"
+            "C:\\Users\\owenf\\source\\repos\\GooBotDiscord\\RhythmHelper.Data\\GooBot.Data.csproj": {
+              "projectPath": "C:\\Users\\owenf\\source\\repos\\GooBotDiscord\\RhythmHelper.Data\\GooBot.Data.csproj"
             }
           }
         }
@@ -5727,6 +5800,14 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.2, )"
+          },
+          "Serilog": {
+            "target": "Package",
+            "version": "[2.10.1-dev-01265, )"
+          },
+          "Serilog.Sinks.File": {
+            "target": "Package",
+            "version": "[5.0.0-dev-00909, )"
           }
         },
         "imports": [

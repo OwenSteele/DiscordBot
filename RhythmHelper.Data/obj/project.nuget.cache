@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9cEd6rC/FltQEPmlBgW8PdEiXUJR9flsSfr2gsA9ZjnqLj54+vXak7P1L95Qu6Mh26LIvK6Pyso93k9kef0mAQ==",
+  "dgSpecHash": "+S/pmYUsTSCAOF4oOvdx4Mevkg7Oj4Tuj97uMhfFeE0xZZCLxz/8YPJHGRclAdQtpVA0XrX8vaEhrUravz2k1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\owenf\\source\\repos\\RhyHelp\\RhythmHelper.Data\\RhythmHelper.Data.csproj",
+  "projectFilePath": "C:\\Users\\owenf\\source\\repos\\GooBotDiscord\\RhythmHelper.Data\\GooBot.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\owenf\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\owenf\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -36,6 +36,8 @@
     "C:\\Users\\owenf\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\owenf\\.nuget\\packages\\newtonsoft.json\\10.0.1\\newtonsoft.json.10.0.1.nupkg.sha512",
     "C:\\Users\\owenf\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\owenf\\.nuget\\packages\\serilog\\2.10.1-dev-01265\\serilog.2.10.1-dev-01265.nupkg.sha512",
+    "C:\\Users\\owenf\\.nuget\\packages\\serilog.sinks.file\\5.0.0-dev-00909\\serilog.sinks.file.5.0.0-dev-00909.nupkg.sha512",
     "C:\\Users\\owenf\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\owenf\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",
     "C:\\Users\\owenf\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",

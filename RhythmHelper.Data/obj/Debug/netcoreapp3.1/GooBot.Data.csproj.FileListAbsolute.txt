@@ -1,0 +1,12 @@
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\bin\Debug\netcoreapp3.1\GooBot.Data.deps.json
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\bin\Debug\netcoreapp3.1\GooBot.Data.runtimeconfig.json
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\bin\Debug\netcoreapp3.1\GooBot.Data.runtimeconfig.dev.json
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\bin\Debug\netcoreapp3.1\GooBot.Data.dll
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\bin\Debug\netcoreapp3.1\GooBot.Data.pdb
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\obj\Debug\netcoreapp3.1\GooBot.Data.csprojAssemblyReference.cache
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\obj\Debug\netcoreapp3.1\GooBot.Data.AssemblyInfoInputs.cache
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\obj\Debug\netcoreapp3.1\GooBot.Data.AssemblyInfo.cs
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\obj\Debug\netcoreapp3.1\GooBot.Data.csproj.CoreCompileInputs.cache
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\obj\Debug\netcoreapp3.1\GooBot.Data.dll
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\obj\Debug\netcoreapp3.1\GooBot.Data.pdb
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper.Data\obj\Debug\netcoreapp3.1\GooBot.Data.genruntimeconfig.cache

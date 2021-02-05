@@ -1,0 +1,4 @@
+02/03/2021 22:28:22 - Guild: 'Ø_'s server' User: 'Ø_' ('0921')
+  Message: 'this is amazing'
+02/03/2021 22:28:52 - Guild: 'Ø_'s server' User: 'Ø_' ('0921')
+  Message: 'this is amazing2'

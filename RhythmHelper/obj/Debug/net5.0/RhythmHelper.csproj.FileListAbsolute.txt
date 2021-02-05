@@ -73,3 +73,5 @@ C:\Users\owenf\source\repos\RhyHelp\RhythmHelper\bin\Debug\net5.0\runtimes\win\l
 C:\Users\owenf\source\repos\RhyHelp\RhythmHelper\bin\Debug\net5.0\RhythmHelper.Data.dll
 C:\Users\owenf\source\repos\RhyHelp\RhythmHelper\bin\Debug\net5.0\RhythmHelper.Data.pdb
 C:\Users\owenf\source\repos\RhyHelp\RhythmHelper\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper\bin\Debug\net5.0\Serilog.dll
+C:\Users\owenf\source\repos\RhyHelp\RhythmHelper\bin\Debug\net5.0\Serilog.Sinks.File.dll

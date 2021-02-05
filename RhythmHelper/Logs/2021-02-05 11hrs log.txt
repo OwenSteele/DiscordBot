@@ -1,0 +1,401 @@
+2021-02-05 11:09:58.292 +00:00 [WRN] 
+
+
+
+2021-02-05 11:09:58.304 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 11:09:58.318 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 11:09:58.449 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 11:10:26.186 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!dice"
+2021-02-05 11:10:26.187 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:10:26.190 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:10:26.191 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:10:26.201 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:10:26.208 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 11:10:26.527 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 11:10:27.714 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:5
+2021-02-05 11:10:27.716 +00:00 [INF] Exe Void MoveNext() Thread:5
+2021-02-05 11:10:27.724 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 11:10:27.724 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:6 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:10:27.724 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:10:27.725 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:10:27.728 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:5 RhythmHelper.Data.Entities.User
+2021-02-05 11:10:31.958 +00:00 [INF] 0Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:12:13.556 +00:00 [WRN] 
+
+
+
+2021-02-05 11:12:13.569 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 11:12:13.583 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 11:12:13.717 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 11:12:49.831 +00:00 [WRN] 
+
+
+
+2021-02-05 11:12:49.844 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 11:12:49.858 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 11:12:49.991 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 11:13:00.585 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!dice"
+2021-02-05 11:13:00.585 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:13:00.588 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:13:00.589 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:13:00.600 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:13:00.607 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 11:13:00.915 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 11:13:01.656 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:6
+2021-02-05 11:13:01.657 +00:00 [INF] Exe Void MoveNext() Thread:6
+2021-02-05 11:13:01.662 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 11:13:01.663 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:4 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:13:01.663 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:13:01.663 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:13:01.666 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 11:13:18.108 +00:00 [INF] 0Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:13:29.183 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:13:29.184 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:13:33.079 +00:00 [DBG] 0Rtn [Commands] DiceRoller() Thread:7 "dice rolled"
+2021-02-05 11:13:35.519 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 :game_die: **6-sided** Dice Ro
+2021-02-05 11:13:35.519 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 ":game_die: **6-sided** Dice Rolled for 'Ø_': :two:"
+2021-02-05 11:14:38.134 +00:00 [DBG]         ---****2 CMD [Bot] Thread:7 "!!dice <@!283690475678990337>"
+2021-02-05 11:14:38.135 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:14:38.135 +00:00 [INF] 2Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:14:38.135 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:14:38.135 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:14:38.141 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:15
+2021-02-05 11:14:38.167 +00:00 [INF] Exe Void MoveNext() Thread:15
+2021-02-05 11:14:38.168 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:17 RhythmHelper.Data.Entities.User
+2021-02-05 11:14:38.168 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:17 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:14:38.168 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:14:38.169 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:14:38.170 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:15 RhythmHelper.Data.Entities.User
+2021-02-05 11:14:41.426 +00:00 [INF] 2Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:16:01.669 +00:00 [WRN] 
+
+
+
+2021-02-05 11:16:01.682 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 11:16:01.696 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 11:16:01.831 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 11:16:12.392 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!dice <@!283690475678990337>"
+2021-02-05 11:16:12.393 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:16:12.396 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:16:12.397 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:16:12.407 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:16:12.414 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 11:16:12.732 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 11:16:13.440 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:4
+2021-02-05 11:16:13.441 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 11:16:13.446 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 11:16:13.446 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:6 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:16:13.446 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:16:13.447 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:16:13.449 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 11:17:21.213 +00:00 [INF] 0Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:17:21.214 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:17:21.214 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:17:21.214 +00:00 [DBG] 0Rtn [Commands] DiceRoller() Thread:7 "dice rolled"
+2021-02-05 11:17:21.214 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 11:17:21.214 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 ":game_die: **6-sided** Dice Rolled for 'Kirk': :zero:"
+2021-02-05 11:17:53.864 +00:00 [DBG]         ---****2 CMD [Bot] Thread:7 "!!dice <@!283690475678990337> <@!805433284048715836> <@!327478216149172225>"
+2021-02-05 11:17:53.864 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:17:53.864 +00:00 [INF] 2Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:17:53.864 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:17:53.865 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:17:53.873 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:6
+2021-02-05 11:17:53.874 +00:00 [INF] Exe Void MoveNext() Thread:6
+2021-02-05 11:17:53.875 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:13 RhythmHelper.Data.Entities.User
+2021-02-05 11:17:53.875 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:13 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:17:53.875 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:17:53.876 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:17:53.877 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 11:18:31.869 +00:00 [INF] 2Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:18:41.179 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:18:41.179 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:18:44.209 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:18:44.209 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:18:45.280 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:18:45.280 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:18:46.901 +00:00 [DBG] 2Rtn [Commands] DiceRoller() Thread:7 "dice rolled"
+2021-02-05 11:18:50.477 +00:00 [DBG] 2Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 11:18:53.961 +00:00 [DBG]         ---****2 MSG [Bot] Thread:7 ":game_die: **6-sided** Dice Rolled for 'Kirk': :five::game_die: **6-sided** Dice Rolled for 'GØØ BOT': :two::game_die: **6-sided** Dice Rolled for 'Ø_': :five:"
+2021-02-05 11:21:27.316 +00:00 [DBG]         ---****4 CMD [Bot] Thread:7 "!!dice <@!327478216149172225> <@!805433284048715836>"
+2021-02-05 11:21:27.316 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:21:27.316 +00:00 [INF] 4Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:21:27.316 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:21:27.317 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:21:27.319 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:13
+2021-02-05 11:21:27.319 +00:00 [INF] Exe Void MoveNext() Thread:13
+2021-02-05 11:21:27.320 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:21 RhythmHelper.Data.Entities.User
+2021-02-05 11:21:27.320 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:21 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:21:27.321 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:21:27.321 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:21:27.322 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:13 RhythmHelper.Data.Entities.User
+2021-02-05 11:21:31.284 +00:00 [INF] 4Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:21:31.284 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:21:31.284 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:21:31.284 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:21:31.284 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:21:31.284 +00:00 [DBG] 4Rtn [Commands] DiceRoller() Thread:7 "dice rolled"
+2021-02-05 11:21:31.284 +00:00 [DBG] 4Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 11:21:31.284 +00:00 [DBG]         ---****4 MSG [Bot] Thread:7 ":game_die: **6-sided** Dice Rolled for '@Ø_': :three: [CRLF] :game_die: **6-sided** Dice Rolled for '@GØØ BOT': :three: [CRLF] "
+2021-02-05 11:21:40.871 +00:00 [DBG]         ---****6 CMD [Bot] Thread:7 "!!dice <@!327478216149172225> <@!805433284048715836>"
+2021-02-05 11:21:40.871 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:21:40.871 +00:00 [INF] 6Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:21:40.871 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:21:40.872 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:21:40.873 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:21
+2021-02-05 11:21:40.874 +00:00 [INF] Exe Void MoveNext() Thread:21
+2021-02-05 11:21:40.875 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:19 RhythmHelper.Data.Entities.User
+2021-02-05 11:21:40.875 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:19 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:21:40.875 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:21:40.875 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:21:40.876 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:21 RhythmHelper.Data.Entities.User
+2021-02-05 11:21:42.171 +00:00 [INF] 6Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:21:42.171 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:21:42.171 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:21:42.171 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:21:42.171 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:21:42.171 +00:00 [DBG] 6Rtn [Commands] DiceRoller() Thread:7 "dice rolled"
+2021-02-05 11:21:42.171 +00:00 [DBG] 6Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 11:21:42.171 +00:00 [DBG]         ---****6 MSG [Bot] Thread:7 ":game_die: **6-sided** Dice Rolled for '@Ø_': :five: [CRLF] :game_die: **6-sided** Dice Rolled for '@GØØ BOT': :two: [CRLF] "
+2021-02-05 11:21:59.826 +00:00 [DBG]         ---****8 CMD [Bot] Thread:7 "!!dicedefault 20"
+2021-02-05 11:21:59.826 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:21:59.826 +00:00 [INF] 8Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:21:59.826 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:21:59.827 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:21:59.829 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:19
+2021-02-05 11:21:59.829 +00:00 [INF] Exe Void MoveNext() Thread:19
+2021-02-05 11:21:59.830 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:21 RhythmHelper.Data.Entities.User
+2021-02-05 11:21:59.830 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:21 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:21:59.831 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:21:59.831 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:21:59.832 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:13 RhythmHelper.Data.Entities.User
+2021-02-05 11:21:59.832 +00:00 [INF] 8Exe [Commands] SetDiceRollerDefault() Thread:7
+2021-02-05 11:21:59.833 +00:00 [INF] Exe [GetInfo] ChangeGuildDiceDefaultAsync Thread:7
+2021-02-05 11:21:59.833 +00:00 [INF] Exe Void Update[T](T) Thread:7
+2021-02-05 11:21:59.840 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:21:59.914 +00:00 [DBG] Rtn [GetInfo] ChangeGuildDiceDefaultAsync Thread:4 "changes saved"
+2021-02-05 11:21:59.914 +00:00 [DBG] 8Rtn [Commands] SetDiceRollerDefault() Thread:7 20
+2021-02-05 11:21:59.914 +00:00 [DBG] 8Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 11:21:59.914 +00:00 [DBG]         ---****8 MSG [Bot] Thread:7 ":game_die: Dice rolls now have a default range of **1 - 20** if no number is given when rolling the dice"
+2021-02-05 11:22:03.454 +00:00 [DBG]         ---****10 CMD [Bot] Thread:7 "!!dice <@!327478216149172225> <@!805433284048715836>"
+2021-02-05 11:22:03.454 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:22:03.454 +00:00 [INF] 10Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:22:03.454 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:22:03.455 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:22:03.457 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:4
+2021-02-05 11:22:03.457 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 11:22:03.458 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:23 RhythmHelper.Data.Entities.User
+2021-02-05 11:22:03.458 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:23 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:22:03.459 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:22:03.459 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:22:03.460 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:19 RhythmHelper.Data.Entities.User
+2021-02-05 11:22:06.478 +00:00 [INF] 10Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:22:06.478 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:22:06.478 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 2"
+2021-02-05 11:22:06.478 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:22:06.478 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 2"
+2021-02-05 11:22:06.478 +00:00 [DBG] 10Rtn [Commands] DiceRoller() Thread:7 "dice rolled"
+2021-02-05 11:22:06.478 +00:00 [DBG] 10Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 11:22:06.478 +00:00 [DBG]         ---****10 MSG [Bot] Thread:7 ":game_die: **20-sided** Dice Rolled for '@Ø_': :one::three: [CRLF] :game_die: **20-sided** Dice Rolled for '@GØØ BOT': :one::one: [CRLF] "
+2021-02-05 11:25:58.508 +00:00 [WRN] 
+
+
+
+2021-02-05 11:25:58.521 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 11:25:58.536 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 11:25:58.675 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 11:26:10.506 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!dice <@!327478216149172225> <@!805433284048715836>"
+2021-02-05 11:26:10.507 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:26:10.509 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:26:10.510 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:26:10.521 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:26:10.528 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 11:26:10.843 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 11:26:11.548 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:4
+2021-02-05 11:26:11.549 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 11:26:11.554 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 11:26:11.554 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:9 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:26:11.555 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:26:11.555 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:26:11.558 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 11:26:15.315 +00:00 [INF] 0Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:26:15.315 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:26:15.316 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:26:15.316 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:26:15.316 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 2"
+2021-02-05 11:26:15.316 +00:00 [DBG] 0Rtn [Commands] DiceRoller() Thread:7 "dice rolled"
+2021-02-05 11:26:15.316 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 11:26:15.316 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 ":game_die: **20-sided** Dice Rolled for ***Ø_***: :eight: [CRLF] :game_die: **20-sided** Dice Rolled for ***GØØ BOT***: :one::zero: [CRLF] "
+2021-02-05 11:28:12.935 +00:00 [WRN] 
+
+
+
+2021-02-05 11:28:12.949 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 11:28:12.963 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 11:28:13.097 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 11:28:19.134 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!dice <@!327478216149172225> <@!805433284048715836>"
+2021-02-05 11:28:19.135 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:28:19.138 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:28:19.139 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:28:19.150 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:28:19.157 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 11:28:19.466 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 11:28:20.181 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:4
+2021-02-05 11:28:20.182 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 11:28:20.188 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:11 RhythmHelper.Data.Entities.User
+2021-02-05 11:28:20.188 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:11 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:28:20.188 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:28:20.189 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:28:20.191 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 11:28:20.192 +00:00 [INF] 0Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:28:20.193 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:28:20.193 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:28:20.193 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:28:20.193 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 2"
+2021-02-05 11:28:20.193 +00:00 [DBG] 0Rtn [Commands] DiceRoller() Thread:7 "dice rolled"
+2021-02-05 11:28:20.193 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 11:28:20.193 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 ":game_die: **20-sided** Dice Rolled for ***Ø_***: :seven: [CRLF] :game_die: **20-sided** Dice Rolled for ***GØØ BOT***: :one::six: [CRLF] "
+2021-02-05 11:28:25.918 +00:00 [DBG]         ---****2 CMD [Bot] Thread:7 "!!dice <@!327478216149172225> <@!805433284048715836>"
+2021-02-05 11:28:25.918 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:28:25.918 +00:00 [INF] 2Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:28:25.918 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:28:25.918 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:28:25.920 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:9
+2021-02-05 11:28:25.920 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-05 11:28:25.922 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:11 RhythmHelper.Data.Entities.User
+2021-02-05 11:28:25.922 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:11 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:28:25.922 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:28:25.922 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:28:25.923 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:11 RhythmHelper.Data.Entities.User
+2021-02-05 11:28:25.923 +00:00 [INF] 2Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:28:25.923 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:28:25.923 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:28:25.923 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:28:25.923 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:28:25.923 +00:00 [DBG] 2Rtn [Commands] DiceRoller() Thread:7 "dice rolled"
+2021-02-05 11:28:25.923 +00:00 [DBG] 2Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 11:28:25.923 +00:00 [DBG]         ---****2 MSG [Bot] Thread:7 ":game_die: **20-sided** Dice Rolled for ***Ø_***: :three: [CRLF] :game_die: **20-sided** Dice Rolled for ***GØØ BOT***: :one: [CRLF] "
+2021-02-05 11:28:35.608 +00:00 [DBG]         ---****4 CMD [Bot] Thread:7 "!!dice <@!327478216149172225> <@!805433284048715836>"
+2021-02-05 11:28:35.608 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:28:35.608 +00:00 [INF] 4Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:28:35.608 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:28:35.608 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:28:35.610 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:6
+2021-02-05 11:28:35.610 +00:00 [INF] Exe Void MoveNext() Thread:6
+2021-02-05 11:28:35.611 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:11 RhythmHelper.Data.Entities.User
+2021-02-05 11:28:35.611 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:11 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:28:35.611 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:28:35.612 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:28:35.613 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 11:28:35.613 +00:00 [INF] 4Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:28:35.613 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:28:35.613 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:28:35.613 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:28:35.613 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:28:35.613 +00:00 [DBG] 4Rtn [Commands] DiceRoller() Thread:7 "dice rolled"
+2021-02-05 11:28:35.613 +00:00 [DBG] 4Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 11:28:35.613 +00:00 [DBG]         ---****4 MSG [Bot] Thread:7 ":game_die: **20-sided** Dice Rolled for ***Ø_***: :five: [CRLF] :game_die: **20-sided** Dice Rolled for ***GØØ BOT***: :eight: [CRLF] "
+2021-02-05 11:28:38.910 +00:00 [DBG]         ---****6 CMD [Bot] Thread:7 "!!dice <@!327478216149172225> <@!805433284048715836>"
+2021-02-05 11:28:38.910 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 11:28:38.910 +00:00 [INF] 6Exe [Commands] NewCommand() Thread:7
+2021-02-05 11:28:38.910 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 11:28:38.911 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:28:38.913 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:9
+2021-02-05 11:28:38.913 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-05 11:28:38.915 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 11:28:38.915 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:4 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:28:38.915 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:7
+2021-02-05 11:28:38.938 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 11:28:38.939 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 11:28:38.939 +00:00 [INF] 6Exe [Commands] DiceRoller() Thread:7
+2021-02-05 11:28:38.939 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:28:38.939 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 1"
+2021-02-05 11:28:38.939 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:7
+2021-02-05 11:28:38.939 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:7 "emojis# 2"
+2021-02-05 11:28:38.939 +00:00 [DBG] 6Rtn [Commands] DiceRoller() Thread:7 "dice rolled"
+2021-02-05 11:28:38.939 +00:00 [DBG] 6Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 11:28:38.939 +00:00 [DBG]         ---****6 MSG [Bot] Thread:7 ":game_die: **20-sided** Dice Rolled for ***Ø_***: :zero: [CRLF] :game_die: **20-sided** Dice Rolled for ***GØØ BOT***: :one::eight: [CRLF] "
+2021-02-05 11:32:23.704 +00:00 [WRN] 
+
+
+
+2021-02-05 11:32:23.716 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 11:32:23.729 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 11:32:23.868 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 11:32:29.379 +00:00 [DBG]         ---****0 CMD [Bot] Thread:8 "!!"
+2021-02-05 11:32:29.380 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:8
+2021-02-05 11:32:29.382 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:8
+2021-02-05 11:32:29.383 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:8
+2021-02-05 11:32:29.394 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 11:32:29.401 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:8
+2021-02-05 11:32:29.709 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:8
+2021-02-05 11:32:30.444 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:9
+2021-02-05 11:32:30.445 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-05 11:32:30.451 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 11:32:30.452 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:9 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:32:30.452 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:8
+2021-02-05 11:32:30.452 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 11:32:30.455 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 11:32:30.456 +00:00 [INF] 0Exe [Commands] ShowHelp() Thread:8
+2021-02-05 11:32:30.457 +00:00 [DBG] 0Rtn [Commands] ShowHelp() Thread:8 "Help message"
+2021-02-05 11:32:30.457 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:8 returning command.
+2021-02-05 11:32:30.457 +00:00 [DBG]         ---****0 MSG [Bot] Thread:8 "Thank you for using GØØ Bot, <@!327478216149172225>. [CRLF] GØØ commands start with: **'!!'** e.g. **!!search** [CRLF]  [CRLF] **Current commands I can do:** [CRLF] :face_vomiting: ***'!!help'*** - shows help (also accessed with just entering the prefix)' [CRLF] :face_vomiting: ***'!!search'*** - returns search results from youtube. - *e.g. '!!search gooey robots'*' [CRLF] :face_vomiting: ***'!!searchlimit'*** - set video return limit - *e.g. !!searchlimit 7*' [CRLF] :face_vomiting: ***'!!searchrestrict'*** - set how closely a video must match the search options 'Off', 'Partial', 'Full' - *e.g. !!searchrestrict full*' [CRLF] :face_vomiting: ***'!!dice'*** - roll a dice (optional: can mention people to roll a dice for them, mutliple mentions possible!) (optional: followed by the limit) [CRLF]     *e.g. !!dice* = rolls with default,  - *!!dice 11* = rolls 11-sided die. - *!!dice @someone @someoneElse* = a dice is rolled for each person mentioned.' [CRLF] :face_vomiting: ***'!!dicedefault'*** - set the default number of side for the diceroll command - *e.g. !!dicedefault 20*' [CRLF] :face_vomiting: ***'!!changeprefix'*** - change the prefix for the bot (must be between 1 to 3 characters long) - *e.g. !!changeprefix @@@*' [CRLF] :face_vomiting: ***'!!resetprefix'*** - reset the prefix to '!!' - does not require current prefix' [CRLF] :face_vomiting: ***'!!botfeedback'*** - give me feedback on: issues, deepest desires (for new commands), suggested changes etc.' [CRLF] "
+2021-02-05 11:58:53.623 +00:00 [WRN] 
+
+
+
+2021-02-05 11:58:53.635 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 11:58:53.649 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 11:58:53.790 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 11:59:06.444 +00:00 [DBG]         ---****0 CMD [Bot] Thread:8 "!!dice @everyone 11"
+2021-02-05 11:59:06.444 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:8
+2021-02-05 11:59:06.447 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:8
+2021-02-05 11:59:06.448 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:8
+2021-02-05 11:59:06.459 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 11:59:06.465 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:8
+2021-02-05 11:59:06.780 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:8
+2021-02-05 11:59:07.997 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:4
+2021-02-05 11:59:07.998 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 11:59:08.003 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 11:59:08.003 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:4 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:59:08.004 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:8
+2021-02-05 11:59:08.004 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 11:59:08.007 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 11:59:08.007 +00:00 [INF] 0Exe [Commands] DiceRoller() Thread:8
+2021-02-05 11:59:08.008 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:8 returning command.
+2021-02-05 11:59:08.008 +00:00 [DBG]         ---****0 MSG [Bot] Thread:8 "Must enter a whole number"
+2021-02-05 11:59:23.245 +00:00 [DBG]         ---****2 CMD [Bot] Thread:8 "!!dice <@!327478216149172225> 11"
+2021-02-05 11:59:23.245 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:8
+2021-02-05 11:59:23.245 +00:00 [INF] 2Exe [Commands] NewCommand() Thread:8
+2021-02-05 11:59:23.245 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:8
+2021-02-05 11:59:23.245 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 11:59:23.247 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:9
+2021-02-05 11:59:23.247 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-05 11:59:23.249 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 11:59:23.249 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:6 RhythmHelper.Data.Entities.Guild
+2021-02-05 11:59:23.249 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:8
+2021-02-05 11:59:23.249 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 11:59:23.250 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 11:59:23.251 +00:00 [INF] 2Exe [Commands] DiceRoller() Thread:8
+2021-02-05 11:59:23.251 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:8
+2021-02-05 11:59:23.251 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:8 "emojis# 1"
+2021-02-05 11:59:23.251 +00:00 [DBG] 2Rtn [Commands] DiceRoller() Thread:8 "dice rolled"
+2021-02-05 11:59:23.251 +00:00 [DBG] 2Rtn [Commands] NewCommand() Thread:8 returning command.
+2021-02-05 11:59:23.251 +00:00 [DBG]         ---****2 MSG [Bot] Thread:8 ":game_die: **11-sided** Dice Rolled for ***Ø_***: :nine: [CRLF] "
+2021-02-05 12:00:07.544 +00:00 [DBG]         ---****4 CMD [Bot] Thread:8 "!!dice <@!327478216149172225>  <@!327478216149172225>  <@!327478216149172225>  11"
+2021-02-05 12:00:07.544 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:8
+2021-02-05 12:00:07.544 +00:00 [INF] 4Exe [Commands] NewCommand() Thread:8
+2021-02-05 12:00:07.544 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:8
+2021-02-05 12:00:07.545 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 12:00:07.553 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:16
+2021-02-05 12:00:07.577 +00:00 [INF] Exe Void MoveNext() Thread:16
+2021-02-05 12:00:07.578 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:16 RhythmHelper.Data.Entities.User
+2021-02-05 12:00:07.578 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:16 RhythmHelper.Data.Entities.Guild
+2021-02-05 12:00:07.578 +00:00 [INF] Exe [GetInfo] GetUserAsync Thread:8
+2021-02-05 12:00:07.579 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 12:00:07.580 +00:00 [DBG] Rtn [GetInfo] GetUserAsync Thread:16 RhythmHelper.Data.Entities.User
+2021-02-05 12:00:07.580 +00:00 [INF] 4Exe [Commands] DiceRoller() Thread:8
+2021-02-05 12:00:07.580 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:8
+2021-02-05 12:00:07.580 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:8 "emojis# 1"
+2021-02-05 12:00:07.580 +00:00 [DBG] 4Rtn [Commands] DiceRoller() Thread:8 "dice rolled"
+2021-02-05 12:00:07.580 +00:00 [DBG] 4Rtn [Commands] NewCommand() Thread:8 returning command.
+2021-02-05 12:00:07.580 +00:00 [DBG]         ---****4 MSG [Bot] Thread:8 ":game_die: **11-sided** Dice Rolled for ***Ø_***: :seven: [CRLF] "

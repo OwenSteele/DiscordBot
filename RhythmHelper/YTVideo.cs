@@ -1,4 +1,8 @@
-﻿namespace RhythmHelper
+﻿using Serilog;
+using System.Diagnostics;
+using System.Threading;
+
+namespace RhythmHelper
 {
     public class YTVideo
     {
@@ -14,12 +18,17 @@
             string videoChannel, string videoLength,
             string videoViews, string videoLink)
         {
+
+            Log.Information($"Ctor [YTVideo] YTVideo() Thread:{Thread.CurrentThread.ManagedThreadId}");
+
             Title = videoTitle;
             Published = videoPublished;
             Channel = videoChannel;
             VideoLength = videoLength;
             ViewsCount = videoViews;
             Link = videoLink;
+
+            Log.Debug($"Fin [YTVideo] YTVideo() Thread:{Thread.CurrentThread.ManagedThreadId} \"init repo\"");
         }
     }
 }

@@ -104,6 +104,12 @@ namespace RhythmHelper.Data.Migrations
                     b.Property<string>("GuildId")
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<bool>("OPointer")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("OPoints")
+                        .HasColumnType("int");
+
                     b.Property<string>("Username")
                         .HasColumnType("nvarchar(max)");
 
