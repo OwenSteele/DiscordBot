@@ -1,0 +1,279 @@
+2021-02-05 18:08:50.565 +00:00 [WRN] 
+
+
+
+2021-02-05 18:08:50.579 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 18:08:50.595 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 18:08:50.778 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 18:09:02.298 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!search THE LONGEST VIDEO ON YOUTUBE - 596 HOURS"
+2021-02-05 18:09:02.299 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 18:09:02.302 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 18:09:02.303 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 18:09:02.315 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:09:02.323 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 18:09:02.657 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 18:09:03.885 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-05 18:09:03.886 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 18:09:03.892 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 18:09:03.892 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:6 RhythmHelper.Data.Entities.Guild
+2021-02-05 18:09:03.893 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 18:09:03.893 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:09:03.896 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 18:09:03.896 +00:00 [INF] 0Exe [Commands] SearchYoutube() Thread:7
+2021-02-05 18:09:03.897 +00:00 [INF] Exe [BotMethods] GetVideos() Thread:7
+2021-02-05 18:09:03.905 +00:00 [INF] Exe [BotMethods] GetPageData() Thread:7
+2021-02-05 18:09:04.717 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:09:04.717 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-05 18:09:04.717 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-05 18:09:04.718 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:09:04.718 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-05 18:09:04.718 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-05 18:09:04.719 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:09:04.719 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-05 18:09:04.719 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-05 18:09:04.721 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:09:04.721 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-05 18:09:04.721 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-05 18:09:04.729 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:09:04.729 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-05 18:09:04.729 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-05 18:09:04.730 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:09:04.730 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-05 18:09:04.730 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-05 18:09:04.731 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:09:04.731 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-05 18:09:04.731 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-05 18:09:04.733 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:09:04.733 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-05 18:09:04.733 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-05 18:09:04.734 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:09:04.734 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-05 18:09:04.734 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-05 18:09:04.736 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:09:04.736 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-05 18:09:04.736 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-05 18:09:04.736 +00:00 [DBG] Rtn [BotMethods] GetVideos() Thread:7 "videos->arr: 10"
+2021-02-05 18:09:04.736 +00:00 [DBG] 0Rtn [Commands] SearchYoutube() Thread:7 "videos: 9"
+2021-02-05 18:09:04.736 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 18:09:04.736 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 "1- ***THE LONGEST VIDEO ON YOUTUBE - 596 HOURS*** By Greg Gottfried (**9 years ago**), 2M views, **10 minutes** - *Copy this to play*:```!play www.youtube.com/user/MoldytoasterMedia```2- ***I Will Guess Your Name In One Minute!*** By BRIGHT SIDE (**2 years ago**), 2,154,510 views, **596 hours** - *Copy this to play*:```!play www.youtube.com/watch?v=8kEWxIl200s```3- ***I Will Guess Your Name In One Minute!*** By BRIGHT SIDE (**2 years ago**), 21,759,754 views, **2 minutes, 47 seconds** - *Copy this to play*:```!play www.youtube.com/watch?v=KGE0x5dIpxA```4- ***100 Hour Timer Countdown – 100 Hrs Video - 100h Video Countdown - 100 Stunden Timer*** By Mac Paverick (**1 year ago**), 3,129,389 views, **100 hours, 1 second** - *Copy this to play*:```!play www.youtube.com/watch?v=56lkofpjOAs```5- ***I Counted To 100,000!*** By MrBeast (**4 years ago**), 21,789,383 views, **23 hours, 48 minutes, 6 seconds** - *Copy this to play*:```!play www.youtube.com/watch?v=xWcldHxHFpo```6- ***PLAYING MINECRAFT FOR 24 HOURS STRAIGHT!*** By UnspeakableGaming (**2 years ago**), 11,221,896 views, **24 hours** - *Copy this to play*:```!play www.youtube.com/watch?v=q9E4U39BQSg```7- ***Reading The Longest English Word (190,000 Characters)*** By MrBeast (**3 years ago**), 16,483,610 views, **1 hour, 54 minutes, 48 seconds** - *Copy this to play*:```!play www.youtube.com/watch?v=IZVbzNRUlQI```8- ***What Happens When You Don’t Skip the Ads (feat. Brendan Scannell)*** By Breno1337 (**1 year ago**), 7,770,277 views, **10 hours, 1 second** - *Copy this to play*:```!play www.youtube.com/watch?v=6AQPaSJOQ7o```9- ***200 Hour Countdown Timer Video – Longest Timer in the World on Youtube -*** By Mac Paverick (**5 months ago**), 250,529 views, **200 hours, 1 second** - *Copy this to play*:```!play www.youtube.com/watch?v=mivcDoTjpQE```"
+2021-02-05 18:23:29.826 +00:00 [WRN] 
+
+
+
+2021-02-05 18:23:29.873 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 18:23:29.889 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 18:23:30.042 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 18:24:32.741 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!searchlength min 00:01:00"
+2021-02-05 18:24:32.742 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 18:24:32.745 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 18:24:32.746 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 18:24:32.758 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:24:32.766 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 18:24:33.089 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 18:24:34.400 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11
+2021-02-05 18:24:34.401 +00:00 [INF] Exe Void MoveNext() Thread:11
+2021-02-05 18:24:34.406 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:13 RhythmHelper.Data.Entities.User
+2021-02-05 18:24:34.407 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:13 RhythmHelper.Data.Entities.Guild
+2021-02-05 18:24:34.407 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 18:24:34.407 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:24:34.410 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:13 RhythmHelper.Data.Entities.User
+2021-02-05 18:24:34.411 +00:00 [INF] 0Exe [Commands] SetSearchLength() Thread:7
+2021-02-05 18:24:34.412 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 18:24:34.412 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 "Min length time must be less than the max length time"
+2021-02-05 18:25:00.103 +00:00 [DBG]         ---****1 CMD [Bot] Thread:7 "!!searchlength min 00:01:00"
+2021-02-05 18:25:00.103 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 18:25:00.103 +00:00 [INF] 1Exe [Commands] NewCommand() Thread:7
+2021-02-05 18:25:00.103 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 18:25:00.104 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:25:00.116 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11
+2021-02-05 18:25:00.116 +00:00 [INF] Exe Void MoveNext() Thread:11
+2021-02-05 18:25:00.118 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:18 RhythmHelper.Data.Entities.User
+2021-02-05 18:25:00.118 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:18 RhythmHelper.Data.Entities.Guild
+2021-02-05 18:25:00.118 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 18:25:00.118 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:25:00.119 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:18 RhythmHelper.Data.Entities.User
+2021-02-05 18:25:03.127 +00:00 [INF] 1Exe [Commands] SetSearchLength() Thread:7
+2021-02-05 18:26:15.045 +00:00 [WRN] 
+
+
+
+2021-02-05 18:26:15.059 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 18:26:15.078 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 18:26:15.244 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 18:26:19.048 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!searchlength min 00:01:00"
+2021-02-05 18:26:19.048 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 18:26:19.051 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 18:26:19.052 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 18:26:19.065 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:26:19.073 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 18:26:19.408 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 18:26:20.163 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-05 18:26:20.164 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 18:26:20.170 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 18:26:20.170 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:4 RhythmHelper.Data.Entities.Guild
+2021-02-05 18:26:20.170 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 18:26:20.171 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:26:20.174 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 18:26:22.145 +00:00 [INF] 0Exe [Commands] SetSearchLength() Thread:7
+2021-02-05 18:27:33.978 +00:00 [INF] Exe [GetInfo] ChangeGuildVideoLengthsAsync Thread:7
+2021-02-05 18:27:33.980 +00:00 [INF] Exe Void Update[T](T) Thread:7
+2021-02-05 18:27:33.986 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:27:34.065 +00:00 [DBG] Rtn [GetInfo] ChangeGuildDiceDefaultAsync Thread:6 "changes saved"
+2021-02-05 18:27:37.215 +00:00 [DBG] 0Rtn [Commands] SetSearchLength() Thread:7 ""
+2021-02-05 18:27:37.216 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 18:27:37.217 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 "Search will only show videos of min length: **  1minutes,  0seconds** and a max length: ** 1hours,  11minutes,  11seconds**"
+2021-02-05 18:29:09.788 +00:00 [DBG]         ---****1 CMD [Bot] Thread:7 "!!search THE LONGEST VIDEO ON YOUTUBE - 596 HOURS"
+2021-02-05 18:29:09.788 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 18:29:09.788 +00:00 [INF] 1Exe [Commands] NewCommand() Thread:7
+2021-02-05 18:29:09.788 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 18:29:09.789 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:29:09.800 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:8
+2021-02-05 18:29:09.825 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 18:29:09.827 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 18:29:09.827 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:4 RhythmHelper.Data.Entities.Guild
+2021-02-05 18:29:09.827 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 18:29:09.828 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:29:09.829 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:16 RhythmHelper.Data.Entities.User
+2021-02-05 18:29:09.830 +00:00 [INF] 1Exe [Commands] SearchYoutube() Thread:7
+2021-02-05 18:29:09.830 +00:00 [INF] Exe [BotMethods] GetVideos() Thread:7
+2021-02-05 18:29:09.837 +00:00 [INF] Exe [BotMethods] GetPageData() Thread:7
+2021-02-05 18:29:10.510 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:29:13.626 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:29:26.587 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:29:27.974 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:30:36.457 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:30:38.244 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:30:59.738 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:31:00.931 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:31:10.651 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:31:12.467 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:31:16.008 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:31:16.389 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:31:16.812 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:31:17.078 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:31:17.443 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:31:17.730 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:31:18.109 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:31:18.423 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:31:18.864 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:31:19.160 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:31:19.160 +00:00 [DBG] Rtn [BotMethods] GetVideos() Thread:7 "videos->arr: 0"
+2021-02-05 18:31:19.160 +00:00 [DBG] 1Rtn [Commands] SearchYoutube() Thread:7 "videos: 0"
+2021-02-05 18:31:19.160 +00:00 [DBG] 1Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 18:31:19.160 +00:00 [DBG]         ---****1 MSG [Bot] Thread:7 "No videos found for search: 'the longest video on youtube - 596 hours'. Try to simplify the search."
+2021-02-05 18:31:43.237 +00:00 [DBG]         ---****2 CMD [Bot] Thread:7 "!!search darknight full movie"
+2021-02-05 18:31:43.238 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 18:31:43.238 +00:00 [INF] 2Exe [Commands] NewCommand() Thread:7
+2021-02-05 18:31:43.238 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 18:31:43.238 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:31:43.240 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:17
+2021-02-05 18:31:43.241 +00:00 [INF] Exe Void MoveNext() Thread:17
+2021-02-05 18:31:43.242 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:27 RhythmHelper.Data.Entities.User
+2021-02-05 18:31:43.242 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:27 RhythmHelper.Data.Entities.Guild
+2021-02-05 18:31:43.242 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 18:31:43.243 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 18:31:43.244 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:17 RhythmHelper.Data.Entities.User
+2021-02-05 18:31:43.244 +00:00 [INF] 2Exe [Commands] SearchYoutube() Thread:7
+2021-02-05 18:31:43.244 +00:00 [INF] Exe [BotMethods] GetVideos() Thread:7
+2021-02-05 18:31:43.244 +00:00 [INF] Exe [BotMethods] GetPageData() Thread:7
+2021-02-05 18:32:01.054 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:32:04.541 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:32:16.360 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-05 18:32:18.681 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-05 18:33:49.547 +00:00 [WRN] 
+
+
+
+2021-02-05 18:33:49.565 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 18:33:49.582 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 18:33:49.734 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 18:34:02.532 +00:00 [DBG]         ---****0 CMD [Bot] Thread:8 "!!search darknight full movie"
+2021-02-05 18:34:02.533 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:8
+2021-02-05 18:34:02.535 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:8
+2021-02-05 18:34:02.536 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:8
+2021-02-05 18:34:02.549 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 18:34:02.557 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:8
+2021-02-05 18:34:02.880 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:8
+2021-02-05 18:34:03.617 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-05 18:34:03.618 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 18:34:03.627 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 18:34:03.627 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:6 RhythmHelper.Data.Entities.Guild
+2021-02-05 18:34:03.628 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:8
+2021-02-05 18:34:03.628 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 18:34:03.630 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7 RhythmHelper.Data.Entities.User
+2021-02-05 18:34:03.631 +00:00 [INF] 0Exe [Commands] SearchYoutube() Thread:8
+2021-02-05 18:34:03.632 +00:00 [INF] Exe [BotMethods] GetVideos() Thread:8
+2021-02-05 18:34:03.638 +00:00 [INF] Exe [BotMethods] GetPageData() Thread:8
+2021-02-05 18:34:04.396 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:8
+2021-02-05 18:34:04.396 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:8
+2021-02-05 18:34:04.398 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:8
+2021-02-05 18:34:04.398 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:8
+2021-02-05 18:34:04.398 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:8 "video within bounds"
+2021-02-05 18:34:04.399 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:8
+2021-02-05 18:34:04.399 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:8 "init repo"
+2021-02-05 18:34:04.401 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:8
+2021-02-05 18:34:04.401 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:8
+2021-02-05 18:34:04.401 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:8 "video within bounds"
+2021-02-05 18:34:04.401 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:8
+2021-02-05 18:34:04.401 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:8 "init repo"
+2021-02-05 18:34:04.402 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:8
+2021-02-05 18:34:04.402 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:8
+2021-02-05 18:34:04.402 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:8 "video within bounds"
+2021-02-05 18:34:04.402 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:8
+2021-02-05 18:34:04.402 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:8 "init repo"
+2021-02-05 18:34:04.404 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:8
+2021-02-05 18:34:04.404 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:8
+2021-02-05 18:34:04.405 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:8
+2021-02-05 18:34:04.405 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:8
+2021-02-05 18:34:04.405 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:8 "video within bounds"
+2021-02-05 18:34:04.405 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:8
+2021-02-05 18:34:04.405 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:8 "init repo"
+2021-02-05 18:34:04.407 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:8
+2021-02-05 18:34:04.407 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:8
+2021-02-05 18:34:04.408 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:8
+2021-02-05 18:34:04.408 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:8
+2021-02-05 18:34:04.417 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:8
+2021-02-05 18:34:04.417 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:8
+2021-02-05 18:34:04.417 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:8 "video within bounds"
+2021-02-05 18:34:04.417 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:8
+2021-02-05 18:34:04.417 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:8 "init repo"
+2021-02-05 18:34:04.418 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:8
+2021-02-05 18:34:04.418 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:8
+2021-02-05 18:34:04.418 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:8 "video within bounds"
+2021-02-05 18:34:04.418 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:8
+2021-02-05 18:34:04.418 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:8 "init repo"
+2021-02-05 18:34:04.419 +00:00 [DBG] Rtn [BotMethods] GetVideos() Thread:8 "videos->arr: 6"
+2021-02-05 18:34:04.419 +00:00 [DBG] 0Rtn [Commands] SearchYoutube() Thread:8 "videos: 6"
+2021-02-05 18:34:04.419 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:8 returning command.
+2021-02-05 18:34:04.419 +00:00 [DBG]         ---****0 MSG [Bot] Thread:8 "1- ***Batman - The Dark Knight | The Joker Compilation (All Scenes)*** By Dylan Hogan (**3 years ago**), 28,579,903 views, **43 minutes, 38 seconds** - *Copy this to play*:```!play www.youtube.com/watch?v=xGcfBRkJSWQ```2- ***The Dark Knight (2008) Official Trailer #1 - Christopher Nolan Movie HD*** By AwesomeAaronOfficial (**7 years ago**), 15,350,326 views, **4 minutes, 57 seconds** - *Copy this to play*:```!play www.youtube.com/watch?v=EXeTwQWrcwY```3- ***Bank Heist (Joker) | The Dark Knight [IMAX]*** By Flashback FM (**4 years ago**), 67,515,775 views, **4 minutes, 56 seconds** - *Copy this to play*:```!play www.youtube.com/watch?v=vetKTtM7YyU```4- ***The Dark Knight Rises Official Soundtrack | Full Album - Hans Zimmer | WaterTower*** By WaterTower Music (**6 months ago**), 44,600 views, **1 hour, 8 minutes, 56 seconds** - *Copy this to play*:```!play www.youtube.com/watch?v=CpAkBWG8eu8```5- ***The Dark Knight - Heath Ledger Joker Behind The Scenes (Rare)*** By Flashback FM (**1 year ago**), 1,597,662 views, **4 minutes, 56 seconds** - *Copy this to play*:```!play www.youtube.com/watch?v=5UW2qxTbQu8```6- ***The Dark Knight Official Trailer #1 [HD] Christian Bale, Heath Ledger, Aaron Eckhart*** By Araya Wajendra (**4 years ago**), 2,842 views, **43 minutes, 38 seconds** - *Copy this to play*:```!play www.youtube.com/watch?v=r3V0nKSTJ9c```"
+2021-02-05 18:50:11.211 +00:00 [WRN] 
+
+
+
+2021-02-05 18:50:11.224 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 18:50:11.238 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 18:50:18.598 +00:00 [WRN] 
+
+
+
+2021-02-05 18:50:18.611 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 18:50:18.627 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 18:50:18.773 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 18:51:52.701 +00:00 [DBG]         ---****0 CMD [Bot] Thread:12 "!!"
+2021-02-05 18:51:52.701 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:12
+2021-02-05 18:51:52.705 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:12
+2021-02-05 18:51:52.706 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:12
+2021-02-05 18:51:52.718 +00:00 [INF] Exe Void MoveNext() Thread:12
+2021-02-05 18:51:52.726 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:12
+2021-02-05 18:51:53.060 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:12
+2021-02-05 18:51:54.253 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11
+2021-02-05 18:51:54.255 +00:00 [INF] Exe Void MoveNext() Thread:11
+2021-02-05 18:51:54.263 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11 RhythmHelper.Data.Entities.User
+2021-02-05 18:51:54.263 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:11 RhythmHelper.Data.Entities.Guild
+2021-02-05 18:51:54.264 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:12
+2021-02-05 18:51:54.264 +00:00 [INF] Exe Void MoveNext() Thread:12
+2021-02-05 18:51:54.267 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11 RhythmHelper.Data.Entities.User
+2021-02-05 18:51:54.268 +00:00 [INF] 0Exe [Commands] ShowHelp() Thread:12
+2021-02-05 18:51:54.269 +00:00 [DBG] 0Rtn [Commands] ShowHelp() Thread:12 "Help message"
+2021-02-05 18:51:54.269 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:12 returning command.
+2021-02-05 18:51:54.269 +00:00 [DBG]         ---****0 MSG [Bot] Thread:12 "Thank you for using GØØ Bot, <@!327478216149172225>. [CRLF] GØØ commands start with: **'!!'** e.g. **!!search** [CRLF]  [CRLF] **Current commands I can do:** [CRLF] :face_vomiting: ***'!!help'*** - shows help (also accessed with just entering the prefix)' [CRLF] :ghost: ***'!!search'*** - returns search results from youtube. - *e.g. '!!search gooey robots'*' [CRLF] :face_vomiting: ***'!!searchlimit'*** - set video return limit - *e.g. !!searchlimit 7*' [CRLF] :ghost: ***'!!searchrestrict'*** - set how closely a video must match the search options 'Off', 'Partial', 'Full' - *e.g. !!searchrestrict full*' [CRLF] :face_vomiting: ***'!!searchlength'*** - set the min or max length of the videos returned - *e.g. !!searchlength min 00:20:11 max 01:00:00* = videos bewteen 20mins 11s and 1 hour only will be returned, *!!searchlength min 00:10:00* = no max length, min length is 10mins' [CRLF] :ghost: ***'!!dice'*** - roll a dice (optional: can mention people to roll a dice for them, mutliple mentions possible!) (optional: followed by the limit) [CRLF]     *e.g. !!dice* = rolls with default,  - *!!dice 11* = rolls 11-sided die. - *!!dice @someone @someoneElse* = a dice is rolled for each person mentioned.' [CRLF] :face_vomiting: ***'!!dicedefault'*** - set the default number of side for the diceroll command - *e.g. !!dicedefault 20*' [CRLF] :ghost: ***'!!changeprefix'*** - change the prefix for the bot (must be between 1 to 3 characters long) - *e.g. !!changeprefix @@@*' [CRLF] :face_vomiting: ***'!!resetprefix'*** - reset the prefix to '!!' - does not require current prefix' [CRLF] :ghost: ***'!!botfeedback'*** - give me feedback on: issues, deepest desires (for new commands), suggested changes etc.' [CRLF] :face_vomiting: ***'!!opoints'*** - give someone some Ø points by a mention (can't self award!) - *!!opoint @someone* = give that person an Ø point.' [CRLF] :ghost: ***'!!checkopoints'*** - check Ø points by a mention or multiple mentions/everyone - *!!checkopoints @someone/@everone/@someone @someoneElse* = to see all mentioned peoples' Ø points' [CRLF] :face_vomiting: ***'!!resetopoints'*** - Reset the Ø points by mention - can only be done by bot creator for now.' [CRLF] :ghost: ***'!!setopointer'*** - Bot Owner only can enable people to give Ø points (states: 0 or 1)' [CRLF] "

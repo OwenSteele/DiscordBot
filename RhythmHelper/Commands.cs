@@ -1,4 +1,5 @@
 ﻿using Discord.WebSocket;
+using GooBot;
 using RhythmHelper.Data.Entities;
 using Serilog;
 using System;
@@ -22,8 +23,6 @@ namespace RhythmHelper
         private string _cmd;
         private string _msg;
         private User[] _mentions;
-
-        private static readonly Random _rand = new Random();
 
         public int MsgVal { get; }
 
@@ -61,14 +60,24 @@ namespace RhythmHelper
                    SetSearchRestriction)
                 },
                 {
+                   "searchlength",
+                   ($"set the min or max length of the videos returned (can set only min or max - *e.g. !!searchlength min 00:20:11 max 01:00:00* = videos bewteen 20mins 11s and 1 hour only will be returned",
+                   SetSearchLength)
+                },
+                {
                    "dice",
-                   ($"roll a dice (optional: can mention people to roll a dice for them, mutliple mentions possible!) (optional: followed by the limit)\n    *e.g. !!dice* = rolls with default,  - *!!dice 11* = rolls 11-sided die. - *!!dice @someone @someoneElse* = a dice is rolled for each person mentioned.",
+                   ($"roll a dice (optional: [mutliple] mentions = rolls for those people) \n**Dice is cryptographically generated for true-randomess**\n     e.g.*!!dice @someone @someoneElse 11* = a 11-sided dice is rolled for each person mentioned.",
                    DiceRoller)
                 },
                 {
                    "dicedefault",
                    ($"set the default number of side for the diceroll command - *e.g. !!dicedefault 20*",
                    SetDiceRollerDefault)
+                },
+                {
+                   "dicedist",
+                   ($"Show the distribution of the crypto-die. MUST INCLUDE iteration count < 100000.",
+                   GetDiceRollerDistribution)
                 },
                 {
                    "changeprefix",
@@ -97,17 +106,16 @@ namespace RhythmHelper
                 },
                 {
                    "resetopoints",
-                   ($"Reset the Ø points by mention - can only be done by bot creator for now.",
+                   ($"Bot Owner only",
                    ResetOPoints)
                 },
                 {
                    "setopointer",
-                   ($"Bot Owner only can enable people to give Ø points (states: 0 or 1)",
+                   ($"Bot Owner only",
                    SetOPointer)
                 }
             };
         }
-
         public string NewCommand()
         {
             Log.Information($"{MsgVal}Exe [Commands] NewCommand() Thread:{Thread.CurrentThread.ManagedThreadId}");
@@ -144,8 +152,8 @@ namespace RhythmHelper
 
             var command = _allCommands.GetValueOrDefault(_cmd);
 
-            if (command.Equals(null))
-                return $"Your command '{_cmd}' was not recognised - type '!!help' for commands.";
+            if (command == (null,null))
+                return $"I don't know that command sorry, check the spelling or type ***{_guild.CommandPrefix}*** for all commands!";
 
             var mentions = _socketMessage.MentionedUsers.ToArray();
 
@@ -263,9 +271,9 @@ namespace RhythmHelper
 
             foreach (var mtn in _mentions)
             {
-                if (_mentions[0].UserId.Equals("327478216149172225") && state == false) continue;
+                if (mtn.UserId.Equals("327478216149172225") && state == false) continue;
 
-                if (_mentions[0].OPointer == state) continue;
+                if (mtn.OPointer == state) continue;
 
 
                 mtn.OPointer = state;
@@ -275,6 +283,8 @@ namespace RhythmHelper
             }
 
             Log.Debug($"{MsgVal}Rtn [Commands] SetOPointer() Thread:{Thread.CurrentThread.ManagedThreadId} \"multiple opoints\"");
+
+            if (string.IsNullOrWhiteSpace(sb.ToString())) return "No one has these privileges to revoke.";
 
             return sb.ToString();
         }
@@ -437,16 +447,21 @@ namespace RhythmHelper
 
             if (value < 2) return "max limit must be higher than one";
 
+            var rollValue = RNG.Roll(value);
+
             if (_mentions.Length == 0)
-                return $":game_die: **{value}-sided** You rolled a dice for: {_methods.GetNumberEmojis(_rand.Next(1, value))}\n";
+                return $":game_die: **{value}-sided** You rolled a dice for: {_methods.GetNumberEmojis(rollValue)}\n";
 
             if (_mentions.Length == 1)
-                return $":game_die: **{value}-sided** Dice Rolled for ***{_mentions[0].Username}***: {_methods.GetNumberEmojis(_rand.Next(1, value))}\n";
+                return $":game_die: **{value}-sided** Dice Rolled for ***{_mentions[0].Username}***: {_methods.GetNumberEmojis(rollValue)}\n";
 
             var sb = new StringBuilder();
 
             foreach (var mtn in _mentions)
-                sb.Append($":game_die: **{value}-sided** Dice Rolled for ***{mtn.Username}***: {_methods.GetNumberEmojis(_rand.Next(1,value))}\n");
+            {
+                sb.Append($":game_die: **{value}-sided** Dice Rolled for ***{mtn.Username}***: {_methods.GetNumberEmojis(rollValue)}\n");
+                rollValue = RNG.Roll(value);
+            }
 
             Log.Debug($"{MsgVal}Rtn [Commands] DiceRoller() Thread:{Thread.CurrentThread.ManagedThreadId} \"dice rolled\"");
 
@@ -472,6 +487,81 @@ namespace RhythmHelper
             Log.Debug($"{MsgVal}Rtn [Commands] SetDiceRollerDefault() Thread:{Thread.CurrentThread.ManagedThreadId} {result}");
 
             return $":game_die: Dice rolls now have a default range of **1 - {result}** if no number is given when rolling the dice";
+        }
+        private string GetDiceRollerDistribution()
+        {
+            Log.Information($"{MsgVal}Exe [Commands] GetDiceRollerDistribution() Thread:{Thread.CurrentThread.ManagedThreadId}");
+
+            int value;
+
+            var warning = "";
+
+            if (string.IsNullOrWhiteSpace(_msg)) return $"must enter iteration value";
+            else if (!int.TryParse(_msg, out value)) return "Must enter a whole number";
+
+            if (value > 100000)
+            {
+                warning = "***Capped at 10000***\n";
+                value = 100000;
+            }
+
+            return warning + RNG.Distribution(_guild.DiceDefault,value);
+        }
+
+        private string SetSearchLength()
+        {
+            Log.Information($"{MsgVal}Exe [Commands] SetSearchLength() Thread:{Thread.CurrentThread.ManagedThreadId}");
+
+            if (string.IsNullOrWhiteSpace(_msg)) return "You need to set some lengths for me to work with. Min or Max, or Both";
+
+            var msgParts = _msg.Split(' ');
+
+            var incorrectFormat = $"I can't read this sorry, check your format matches this style: **{_guild.CommandPrefix}searchlength min 00:00:00**";
+
+            if (!(msgParts.Length % 2 == 0) || msgParts.Length == 0)
+                return incorrectFormat;
+
+            var min = _guild.VideoLengthMin;
+            var max = _guild.VideoLengthMax;
+
+            for (int i = 0; i< msgParts.Length; i +=2)
+            {
+                try
+                {
+                    if (msgParts[i].Contains("min")) min = TimeSpan.Parse(msgParts[i + 1]);
+                    else if (msgParts[i].Contains("max")) max = TimeSpan.Parse(msgParts[i + 1]);
+                }
+                catch (Exception)
+                {
+                    return incorrectFormat;
+                }
+            }            
+
+            if (min.TotalMilliseconds >= max.TotalMilliseconds) return "Min length time must be less than the max length time";
+
+            if (min.TotalMilliseconds < 0 || max.TotalMilliseconds < 0) return "Cannot have negative times, DUH!";
+
+            if (min.TotalDays >= 1 || max.TotalDays >= 1) return "Cannot set the lengths to be over a day";
+
+            if (max.TotalHours > 2) return "Rythm can't play songs over two hours long";
+
+            if (_guild.VideoLengthMin.TotalMilliseconds == min.TotalMilliseconds &&
+                _guild.VideoLengthMax.TotalMilliseconds == max.TotalMilliseconds)
+                return "These are already the min and max video lengths!";
+
+            var result = _info.ChangeGuildVideoLengthsAsync(_guild, min, max).Result;
+
+            if (!result.HasValue) return "Couldn't change the video length bounds.";
+
+            var tMin = result.GetValueOrDefault().Item1;
+            var tMax = result.GetValueOrDefault().Item2;
+
+            var textMin = $"{(tMin.TotalDays >= 1 ? (tMin.Days +" days, ") : "")} {(tMin.TotalHours >= 1 ? (tMin.Hours + " hours, ") : "")} {(tMin.TotalMinutes >= 1 ? (tMin.Minutes + " minutes, ") : "")} {(tMin.TotalSeconds >= 1 ? (tMin.Seconds + " seconds") : "")}";
+            var textMax = $"{(tMin.TotalDays >= 1 ? (tMax.Days + " days, ") : "")} {(tMax.TotalHours >= 1 ? (tMax.Hours + " hours, ") : "")} {(tMax.TotalMinutes >= 1 ? (tMax.Minutes + " minutes, ") : "")} {(tMax.TotalSeconds >= 1 ? (tMax.Seconds + " seconds") : "")}";
+
+            Log.Debug($"{MsgVal}Rtn [Commands] SetSearchLength() Thread:{Thread.CurrentThread.ManagedThreadId} \"\"");
+
+            return $"Search will only show videos of min length: **{textMin}** and a max length: **{textMax}**";
         }
 
         private string SetSearchRestriction()
@@ -514,7 +604,9 @@ namespace RhythmHelper
         {
             Log.Information($"{MsgVal}Exe [Commands] SearchYoutube() Thread:{Thread.CurrentThread.ManagedThreadId}");
 
-            var videos = _methods.GetVideos(_guild.Limit, _guild.Restrict, _msg);
+            if (string.IsNullOrWhiteSpace(_msg)) return "Must enter something to search for!";
+
+            var videos = _methods.GetVideos(_guild.Limit, _guild.Restrict, _msg, _guild.VideoLengthMin,_guild.VideoLengthMax);
 
             var videosInfo = new List<string>();
 
@@ -533,6 +625,11 @@ namespace RhythmHelper
             }
 
             Log.Debug($"{MsgVal}Rtn [Commands] SearchYoutube() Thread:{Thread.CurrentThread.ManagedThreadId} \"videos: {videosInfo.Count}\"");
+
+            var result = string.Join("", videosInfo);
+
+            if (string.IsNullOrWhiteSpace(result)) 
+                return $"No videos found for search: '{_msg}'. {(_guild.Restrict.Equals(RestrictType.Off) ? "Try to simplify the search." : "Try to reduce the restriction level.")}";
 
             return string.Join("", videosInfo);
         }

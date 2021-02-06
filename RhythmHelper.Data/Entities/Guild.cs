@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RhythmHelper.Data.Entities
 {
@@ -21,10 +18,15 @@ namespace RhythmHelper.Data.Entities
 
         public int Limit { get; set; }
         public RestrictType Restrict { get; set; }
+
+        public TimeSpan VideoLengthMin { get; set; }
+        public TimeSpan VideoLengthMax { get; set; }
         public int DiceDefault { get; set; }
         [Required]
-        [StringLength(3,MinimumLength =1)]
+        [StringLength(3, MinimumLength = 1)]
         public string CommandPrefix { get; set; }
+
+
 
     }
 }

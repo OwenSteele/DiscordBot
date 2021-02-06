@@ -152,3 +152,4 @@ C:\Users\owenf\source\repos\GooBotDiscord\RhythmHelper\obj\Debug\net5.0\GooBot.d
 C:\Users\owenf\source\repos\GooBotDiscord\RhythmHelper\obj\Debug\net5.0\ref\GooBot.dll
 C:\Users\owenf\source\repos\GooBotDiscord\RhythmHelper\obj\Debug\net5.0\GooBot.pdb
 C:\Users\owenf\source\repos\GooBotDiscord\RhythmHelper\obj\Debug\net5.0\GooBot.genruntimeconfig.cache
+C:\Users\owenf\source\repos\GooBotDiscord\RhythmHelper\bin\Debug\net5.0\Serilog.Sinks.Console.dll

@@ -1,0 +1,223 @@
+2021-02-05 17:00:19.238 +00:00 [WRN] 
+
+
+
+2021-02-05 17:00:19.251 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 17:00:19.268 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 17:00:19.425 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 17:34:30.851 +00:00 [WRN] 
+
+
+
+2021-02-05 17:34:30.899 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 17:34:30.924 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 17:34:31.096 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 17:35:16.536 +00:00 [DBG]         ---****0 CMD [Bot] Thread:8 "!!searchlength max 1:00:00 min 0:20:00"
+2021-02-05 17:35:16.537 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:8
+2021-02-05 17:35:16.540 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:8
+2021-02-05 17:35:16.541 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:8
+2021-02-05 17:35:16.558 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-05 17:35:16.565 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:8
+2021-02-05 17:35:16.899 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:8
+2021-02-05 17:39:21.726 +00:00 [WRN] 
+
+
+
+2021-02-05 17:39:21.776 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 17:39:21.795 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 17:39:21.976 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 17:39:34.933 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!searchlength max 1:00:00 min 0:20:00"
+2021-02-05 17:39:34.934 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 17:39:34.936 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 17:39:34.937 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 17:39:34.950 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:39:34.958 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 17:39:35.293 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 17:39:36.036 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-05 17:39:36.038 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 17:39:36.043 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 17:39:36.043 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:9 RhythmHelper.Data.Entities.Guild
+2021-02-05 17:39:36.043 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 17:39:36.044 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:39:36.047 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 17:39:36.048 +00:00 [INF] 0Exe [Commands] SetSearchLength() Thread:7
+2021-02-05 17:39:36.049 +00:00 [INF] Exe [GetInfo] ChangeGuildVideoLengthsAsync Thread:7
+2021-02-05 17:39:36.050 +00:00 [INF] Exe Void Update[T](T) Thread:7
+2021-02-05 17:39:36.056 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:39:36.131 +00:00 [DBG] Rtn [GetInfo] ChangeGuildDiceDefaultAsync Thread:4 "changes saved"
+2021-02-05 17:39:36.132 +00:00 [DBG] 0Rtn [Commands] SetSearchLength() Thread:7 ""
+2021-02-05 17:39:36.132 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 17:39:36.132 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 "Search will only show videos of min length: 00:00:00 and a max length: 00:00:00"
+2021-02-05 17:39:47.145 +00:00 [DBG]         ---****1 CMD [Bot] Thread:7 "!!searchlength max 1:00:00 min 0:20:00"
+2021-02-05 17:39:47.145 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 17:39:47.145 +00:00 [INF] 1Exe [Commands] NewCommand() Thread:7
+2021-02-05 17:39:47.145 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 17:39:47.146 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:39:47.150 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6
+2021-02-05 17:39:47.151 +00:00 [INF] Exe Void MoveNext() Thread:6
+2021-02-05 17:39:47.152 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 17:39:47.152 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:6 RhythmHelper.Data.Entities.Guild
+2021-02-05 17:39:47.152 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 17:39:47.153 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:39:47.154 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 17:39:49.209 +00:00 [INF] 1Exe [Commands] SetSearchLength() Thread:7
+2021-02-05 17:40:14.219 +00:00 [INF] Exe [GetInfo] ChangeGuildVideoLengthsAsync Thread:7
+2021-02-05 17:41:30.964 +00:00 [WRN] 
+
+
+
+2021-02-05 17:41:30.979 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 17:41:30.997 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 17:41:31.154 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 17:41:32.509 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!searchlength max 1:00:00 min 0:20:00"
+2021-02-05 17:41:32.510 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 17:41:32.513 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 17:41:32.513 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 17:41:32.527 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:41:32.536 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 17:41:32.862 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 17:41:33.623 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9
+2021-02-05 17:41:33.624 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-05 17:41:33.629 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 17:41:33.630 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:4 RhythmHelper.Data.Entities.Guild
+2021-02-05 17:41:33.630 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 17:41:33.630 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:41:33.636 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11 RhythmHelper.Data.Entities.User
+2021-02-05 17:41:34.545 +00:00 [INF] 0Exe [Commands] SetSearchLength() Thread:7
+2021-02-05 17:41:47.404 +00:00 [INF] Exe [GetInfo] ChangeGuildVideoLengthsAsync Thread:7
+2021-02-05 17:41:52.251 +00:00 [INF] Exe Void Update[T](T) Thread:7
+2021-02-05 17:41:54.696 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:41:55.844 +00:00 [DBG] Rtn [GetInfo] ChangeGuildDiceDefaultAsync Thread:4 "changes saved"
+2021-02-05 17:42:04.476 +00:00 [DBG] 0Rtn [Commands] SetSearchLength() Thread:7 ""
+2021-02-05 17:42:07.857 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 17:42:07.857 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 "Search will only show videos of min length: 00:20:00 and a max length: 01:00:00"
+2021-02-05 17:54:02.761 +00:00 [WRN] 
+
+
+
+2021-02-05 17:54:02.775 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 17:54:02.791 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 17:54:02.950 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 17:54:05.849 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!searchlength max 1:00:00 min 0:20:00"
+2021-02-05 17:54:05.849 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 17:54:05.852 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 17:54:05.853 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 17:54:05.865 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:54:05.873 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 17:54:06.189 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 17:54:07.406 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-05 17:54:07.407 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 17:54:07.412 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 17:54:07.412 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:6 RhythmHelper.Data.Entities.Guild
+2021-02-05 17:54:07.413 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 17:54:07.413 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:54:07.415 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 17:54:07.417 +00:00 [INF] 0Exe [Commands] SetSearchLength() Thread:7
+2021-02-05 17:54:07.418 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 17:54:07.418 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 "Cannot set the lengths to be over a day"
+2021-02-05 17:54:22.270 +00:00 [WRN] 
+
+
+
+2021-02-05 17:54:22.282 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 17:54:22.296 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 17:54:22.454 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 17:54:29.315 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!searchlength max 1:00:00 min 0:20:00"
+2021-02-05 17:54:29.316 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 17:54:29.319 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 17:54:29.320 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 17:54:29.333 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:54:29.340 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 17:54:29.672 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 17:54:30.437 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-05 17:54:30.438 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 17:54:30.444 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 17:54:30.444 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:9 RhythmHelper.Data.Entities.Guild
+2021-02-05 17:54:30.444 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 17:54:30.445 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:54:30.447 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 17:54:30.449 +00:00 [INF] 0Exe [Commands] SetSearchLength() Thread:7
+2021-02-05 17:54:49.551 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 17:54:49.551 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 "These are already the min and max video lengths!"
+2021-02-05 17:55:00.882 +00:00 [DBG]         ---****1 CMD [Bot] Thread:7 "!!searchlength max 1:00:11 min 0:20:22"
+2021-02-05 17:55:00.882 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 17:55:00.883 +00:00 [INF] 1Exe [Commands] NewCommand() Thread:7
+2021-02-05 17:55:00.883 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 17:55:00.883 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:55:00.888 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9
+2021-02-05 17:55:00.888 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-05 17:55:00.890 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:14 RhythmHelper.Data.Entities.User
+2021-02-05 17:55:00.892 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:14 RhythmHelper.Data.Entities.Guild
+2021-02-05 17:55:00.893 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 17:55:00.895 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:55:00.896 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:14 RhythmHelper.Data.Entities.User
+2021-02-05 17:55:00.896 +00:00 [INF] 1Exe [Commands] SetSearchLength() Thread:7
+2021-02-05 17:55:06.366 +00:00 [INF] Exe [GetInfo] ChangeGuildVideoLengthsAsync Thread:7
+2021-02-05 17:55:06.368 +00:00 [INF] Exe Void Update[T](T) Thread:7
+2021-02-05 17:55:06.374 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:55:07.054 +00:00 [DBG] Rtn [GetInfo] ChangeGuildDiceDefaultAsync Thread:6 "changes saved"
+2021-02-05 17:55:10.940 +00:00 [DBG] 1Rtn [Commands] SetSearchLength() Thread:7 ""
+2021-02-05 17:55:15.636 +00:00 [DBG] 1Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 17:55:15.636 +00:00 [DBG]         ---****1 MSG [Bot] Thread:7 "Search will only show videos of min length: 0.014143518518518519days,  0.33944444444444444hours,  20.366666666666667minutes,  1222seconds and a max length: 0.04179398148148148days,  1.0030555555555556hours,  60.18333333333333minutes,  3611seconds"
+2021-02-05 17:55:54.665 +00:00 [WRN] 
+
+
+
+2021-02-05 17:55:54.679 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 17:55:54.696 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 17:55:54.856 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 17:56:17.893 +00:00 [WRN] 
+
+
+
+2021-02-05 17:56:17.907 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 17:56:17.923 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 17:56:18.073 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 17:56:25.551 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!searchlength max 1:10:11 min 0:20:26"
+2021-02-05 17:56:25.552 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 17:56:25.555 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 17:56:25.556 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 17:56:25.569 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:56:25.576 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 17:56:25.903 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 17:56:26.659 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-05 17:56:26.660 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 17:56:26.666 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9 RhythmHelper.Data.Entities.User
+2021-02-05 17:56:26.666 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:9 RhythmHelper.Data.Entities.Guild
+2021-02-05 17:56:26.666 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 17:56:26.666 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:56:26.669 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-05 17:56:26.670 +00:00 [INF] 0Exe [Commands] SetSearchLength() Thread:7
+2021-02-05 17:56:28.718 +00:00 [INF] Exe [GetInfo] ChangeGuildVideoLengthsAsync Thread:7
+2021-02-05 17:56:28.719 +00:00 [INF] Exe Void Update[T](T) Thread:7
+2021-02-05 17:56:28.724 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:56:28.815 +00:00 [DBG] Rtn [GetInfo] ChangeGuildDiceDefaultAsync Thread:4 "changes saved"
+2021-02-05 17:58:38.844 +00:00 [WRN] 
+
+
+
+2021-02-05 17:58:38.859 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-05 17:58:38.874 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-05 17:58:39.020 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-05 17:58:45.736 +00:00 [DBG]         ---****0 CMD [Bot] Thread:7 "!!searchlength max 1:11:11 min 0:21:26"
+2021-02-05 17:58:45.737 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-05 17:58:45.740 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-05 17:58:45.741 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-05 17:58:45.753 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:58:45.761 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-05 17:58:46.083 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-05 17:58:46.837 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-05 17:58:46.838 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-05 17:58:46.843 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 17:58:46.843 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:4 RhythmHelper.Data.Entities.Guild
+2021-02-05 17:58:46.844 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-05 17:58:46.844 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:58:46.846 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-05 17:58:46.847 +00:00 [INF] 0Exe [Commands] SetSearchLength() Thread:7
+2021-02-05 17:58:50.369 +00:00 [INF] Exe [GetInfo] ChangeGuildVideoLengthsAsync Thread:7
+2021-02-05 17:58:50.370 +00:00 [INF] Exe Void Update[T](T) Thread:7
+2021-02-05 17:58:50.376 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-05 17:58:50.461 +00:00 [DBG] Rtn [GetInfo] ChangeGuildDiceDefaultAsync Thread:4 "changes saved"
+2021-02-05 17:59:02.667 +00:00 [DBG] 0Rtn [Commands] SetSearchLength() Thread:7 ""
+2021-02-05 17:59:04.246 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-05 17:59:04.246 +00:00 [DBG]         ---****0 MSG [Bot] Thread:7 "Search will only show videos of min length:   21minutes,  26seconds and a max length:  1hours,  11minutes,  11seconds"

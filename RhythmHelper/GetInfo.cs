@@ -2,6 +2,7 @@
 using RhythmHelper.Data;
 using RhythmHelper.Data.Entities;
 using Serilog;
+using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -86,15 +87,14 @@ namespace RhythmHelper
 
             var user = socketMessage.Author as SocketGuildUser;
 
+
             var userId= user.Id.ToString();
 
-            if (mention != null) user = mention as SocketGuildUser;
-
-            if (user == null && mention != null) userId = mention.Id.ToString();
+            if (mention != null) userId = mention.Id.ToString();
 
             var result = await _guildRepo.GetUserById(userId);
 
-            if (result == null)
+            if (result == null && userId == user.Id.ToString())
             {
                 var addResult = await AddNewUserAsync(user);
 
@@ -102,6 +102,21 @@ namespace RhythmHelper
 
                 return addResult;
             }
+            else if(mention != null)
+            {
+                var addResult = await AddNewUserAsync(new User {
+                    UserId = mention.Id.ToString(),
+                    Discriminator = mention.Discriminator, 
+                    OPoints = 0, OPointer = false, 
+                    Guild = await _guildRepo.GetGuildById(_socketGuild.Id.ToString()), 
+                    Username = mention.Username});
+
+                if (addResult == null) return null;
+
+                return addResult;
+            }
+
+            if (result == null) return null;
 
             if (result.Guild == null) result = await UpdateUserAsync(result);
 
@@ -144,7 +159,9 @@ namespace RhythmHelper
                 Limit = 10,
                 DiceDefault = 6,
                 Restrict = RestrictType.Off,
-                CommandPrefix = "!!"
+                CommandPrefix = "!!",
+                VideoLengthMin = new TimeSpan(0),
+                VideoLengthMax = TimeSpan.Parse("2:00:00")
             };
 
             _guildRepo.Add(newEntity);
@@ -172,6 +189,24 @@ namespace RhythmHelper
                 OPointer = false,
                 OPoints = 0
             };
+
+            _guildRepo.Add(newEntity);
+
+            if (!await _guildRepo.SaveChangesAsync()) return null;
+
+            Log.Debug($"Rtn [GetInfo] AddNewUserAsync Thread:{Thread.CurrentThread.ManagedThreadId} \"changes saved\"");
+
+            return await _guildRepo.GetUserById(newEntity.UserId);
+        }
+        private async Task<User> AddNewUserAsync(User user)
+        {
+            Log.Information($"Exe [GetInfo] AddNewUserAsync Thread:{Thread.CurrentThread.ManagedThreadId}");
+
+            var existing = await _guildRepo.GetUserById(user.UserId);
+
+            if (existing != null) return existing;
+
+            var newEntity = user;
 
             _guildRepo.Add(newEntity);
 
@@ -241,6 +276,24 @@ namespace RhythmHelper
             Log.Debug($"Rtn [GetInfo] ChangeGuildDiceDefaultAsync Thread:{Thread.CurrentThread.ManagedThreadId} \"changes saved\"");
 
             return value;
+        }
+
+        public async Task<(TimeSpan,TimeSpan)?> ChangeGuildVideoLengthsAsync(Guild guild, TimeSpan? min =null, TimeSpan? max = null)
+        {
+            Log.Information($"Exe [GetInfo] ChangeGuildVideoLengthsAsync Thread:{Thread.CurrentThread.ManagedThreadId}");
+
+            if (min == null && max == null) return null;
+
+            if (max != null) guild.VideoLengthMax = max.GetValueOrDefault();
+            if (min != null) guild.VideoLengthMin = min.GetValueOrDefault();
+
+            _guildRepo.Update(guild);
+
+            if (!await _guildRepo.SaveChangesAsync()) return null;
+
+            Log.Debug($"Rtn [GetInfo] ChangeGuildDiceDefaultAsync Thread:{Thread.CurrentThread.ManagedThreadId} \"changes saved\"");
+
+            return (guild.VideoLengthMin,guild.VideoLengthMax);
         }
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "q/W4lpnwprCrGvZxHse0whRgDhIr2d8MTLgJcV6wRZc4ntqIEeLrAerpss3GmlRW3VUH9np4zouXSfpHidydQQ==",
+  "dgSpecHash": "FbE97HAGPSzDA57hdaMtCLMsEby+Q3QjbTNwB1ZzMyeXaeJ3vtwbKdDF2QdPKJqeNTdPb2pi5x5robyo4GYHiw==",
   "success": true,
   "projectFilePath": "C:\\Users\\owenf\\source\\repos\\GooBotDiscord\\RhythmHelper\\GooBot.csproj",
   "expectedPackageFiles": [
@@ -43,6 +43,7 @@
     "C:\\Users\\owenf\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
     "C:\\Users\\owenf\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
     "C:\\Users\\owenf\\.nuget\\packages\\serilog\\2.10.1-dev-01265\\serilog.2.10.1-dev-01265.nupkg.sha512",
+    "C:\\Users\\owenf\\.nuget\\packages\\serilog.sinks.console\\4.0.0-dev-00839\\serilog.sinks.console.4.0.0-dev-00839.nupkg.sha512",
     "C:\\Users\\owenf\\.nuget\\packages\\serilog.sinks.file\\5.0.0-dev-00909\\serilog.sinks.file.5.0.0-dev-00909.nupkg.sha512",
     "C:\\Users\\owenf\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
     "C:\\Users\\owenf\\.nuget\\packages\\system.collections.concurrent\\4.3.0\\system.collections.concurrent.4.3.0.nupkg.sha512",

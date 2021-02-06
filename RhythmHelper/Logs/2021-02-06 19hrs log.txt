@@ -1,0 +1,50 @@
+2021-02-06 19:39:23.386 +00:00 [WRN] 
+
+
+
+2021-02-06 19:39:23.455 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-06 19:39:23.601 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-06 19:39:24.060 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-06 19:53:55.186 +00:00 [WRN] 
+
+
+
+2021-02-06 19:53:55.199 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-06 19:53:55.225 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-06 19:53:55.367 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-06 19:54:06.618 +00:00 [DBG]         ---****0 CMD [Bot] (Ø_'s server) (Ø_) Thread:8 "!!dice"
+2021-02-06 19:54:06.619 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:8
+2021-02-06 19:54:06.622 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:8
+2021-02-06 19:54:06.623 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:8
+2021-02-06 19:54:06.634 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-06 19:54:06.641 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:8
+2021-02-06 19:54:06.948 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:8
+2021-02-06 19:54:08.217 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11
+2021-02-06 19:54:08.218 +00:00 [INF] Exe Void MoveNext() Thread:11
+2021-02-06 19:54:08.224 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11 RhythmHelper.Data.Entities.User
+2021-02-06 19:54:08.224 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:11 RhythmHelper.Data.Entities.Guild
+2021-02-06 19:54:08.225 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:8
+2021-02-06 19:54:08.225 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-06 19:54:08.228 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11 RhythmHelper.Data.Entities.User
+2021-02-06 19:54:08.229 +00:00 [INF] 0Exe [Commands] DiceRoller() Thread:8
+2021-02-06 19:54:08.234 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:8
+2021-02-06 19:54:08.235 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:8 "emojis# 2"
+2021-02-06 19:54:08.235 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:8 returning command.
+2021-02-06 19:54:08.235 +00:00 [DBG]         ---****0 MSG [Bot] (Ø_'s server) (Ø_) Thread:8 ":game_die: **20-sided** You rolled a dice for: :one::zero: [CRLF] "
+2021-02-06 19:55:00.363 +00:00 [DBG]         ---****1 CMD [Bot] (Ø_'s server) (Ø_) Thread:8 "!!dice"
+2021-02-06 19:55:00.363 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:8
+2021-02-06 19:55:00.363 +00:00 [INF] 1Exe [Commands] NewCommand() Thread:8
+2021-02-06 19:55:00.363 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:8
+2021-02-06 19:55:00.364 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-06 19:55:00.374 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:12
+2021-02-06 19:55:00.396 +00:00 [INF] Exe Void MoveNext() Thread:12
+2021-02-06 19:55:00.397 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:16 RhythmHelper.Data.Entities.User
+2021-02-06 19:55:00.397 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:16 RhythmHelper.Data.Entities.Guild
+2021-02-06 19:55:00.397 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:8
+2021-02-06 19:55:00.398 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-06 19:55:00.399 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:17 RhythmHelper.Data.Entities.User
+2021-02-06 19:55:04.735 +00:00 [INF] 1Exe [Commands] DiceRoller() Thread:8
+2021-02-06 19:55:37.393 +00:00 [INF] Exe [BotMethods] GetNumberEmojis() Thread:8
+2021-02-06 19:55:41.231 +00:00 [DBG] Rtn [BotMethods] GetNumberEmojis() Thread:8 "emojis# 2"
+2021-02-06 19:55:41.231 +00:00 [DBG] 1Rtn [Commands] NewCommand() Thread:8 returning command.
+2021-02-06 19:55:41.231 +00:00 [DBG]         ---****1 MSG [Bot] (Ø_'s server) (Ø_) Thread:8 ":game_die: **20-sided** You rolled a dice for: :one::five: [CRLF] "

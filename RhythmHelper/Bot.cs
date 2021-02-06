@@ -2,10 +2,10 @@
 using Discord.WebSocket;
 using Serilog;
 using System;
-using System.Diagnostics;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
+using Serilog.Sinks.SystemConsole;
 
 namespace RhythmHelper
 {
@@ -19,9 +19,13 @@ namespace RhythmHelper
 
         public async Task MainAsync()
         {
+            Directory.CreateDirectory(@"..\..\..\Logs\");
+            Directory.CreateDirectory(@"..\..\..\Feedback\");
+
             Log.Logger = new LoggerConfiguration()
                 .WriteTo.File(
                 @$"..\..\..\Logs\{DateTime.Now:yyyy-MM-dd HH}hrs log.txt")
+                .WriteTo.Console()
                 .MinimumLevel.Debug()
                 .CreateLogger();
 
@@ -54,19 +58,36 @@ namespace RhythmHelper
         {
             var msgVal = _message;
 
-            if (socketMessage.Author.IsBot)
+            if (socketMessage.Author.IsBot || string.IsNullOrWhiteSpace(socketMessage.Content))
                 return Task.CompletedTask;
 
             _message++;
+            string result = null;
+            string guildName = null;
 
-            Log.Debug($"        ---****{msgVal} CMD [Bot] Thread:{Thread.CurrentThread.ManagedThreadId} \"{socketMessage.Content.Replace("\n"," [CRLF] ")}\"");
+            var channel = socketMessage.Channel as SocketGuildChannel;
+            var guild = channel.Guild;
 
-            var handler = new Commands(socketMessage, ref _info, _methods, msgVal);
-            var result = handler.NewCommand();
+            if (guild != null) guildName = guild.Name;
 
-            if (string.IsNullOrWhiteSpace(result)) return Task.CompletedTask;
+            Log.Debug($"        ---****{msgVal} CMD [Bot] ({(guildName ?? "GuildNameNull")}) ({socketMessage.Author.Username}) Thread:{Thread.CurrentThread.ManagedThreadId} \"{socketMessage.Content.Replace("\n", " [CRLF] ")}\"");
 
-            Log.Debug($"        ---****{msgVal} MSG [Bot] Thread:{Thread.CurrentThread.ManagedThreadId} \"{result.Replace("\n", " [CRLF] ")}\"");
+            try
+            {
+                var handler = new Commands(socketMessage, ref _info, _methods, msgVal);
+                result = handler.NewCommand();
+
+                if (string.IsNullOrWhiteSpace(result)) return Task.CompletedTask;
+
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"---ERROR [Bot] ({(guildName ?? "GuildNameNull")}) ({socketMessage.Author.Username}) Thread:{Thread.CurrentThread.ManagedThreadId} Error: '{ex.Message}' \"{result.Replace("\n", " [CRLF] ")}\"");
+            }
+
+            Log.Debug($"        ---****{msgVal} MSG [Bot] ({(guildName ?? "GuildNameNull")}) ({socketMessage.Author.Username}) Thread:{Thread.CurrentThread.ManagedThreadId} \"{result.Replace("\n", " [CRLF] ")}\"");
+
+            if (result.Length >= 2000) result = result[..1999];
 
             return socketMessage.Channel.SendMessageAsync(result);
         }

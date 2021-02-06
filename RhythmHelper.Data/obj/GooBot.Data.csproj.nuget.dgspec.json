@@ -70,6 +70,10 @@
               "target": "Package",
               "version": "[2.10.1-dev-01265, )"
             },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.0.0-dev-00839, )"
+            },
             "Serilog.Sinks.File": {
               "target": "Package",
               "version": "[5.0.0-dev-00909, )"

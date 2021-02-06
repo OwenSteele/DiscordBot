@@ -27,7 +27,7 @@ namespace RhythmHelper
             {"9", ":nine:" }
         };
 
-        public YTVideo[] GetVideos(int limit, RestrictType restrict, string search)
+        public YTVideo[] GetVideos(int limit, RestrictType restrict, string search, TimeSpan min, TimeSpan max)
         {
             Log.Information($"Exe [BotMethods] GetVideos() Thread:{Thread.CurrentThread.ManagedThreadId}");
 
@@ -71,6 +71,9 @@ namespace RhythmHelper
                 var videoChannel = subPage[channelStart..channelEnd];
                 var videoPublished = subPage[publishedStart..publishedEnd];
                 var videoLength = subPage[lengthStart..lengthEnd];
+
+                
+
                 var videoViews = subPage[viewStart..viewEnd];
                 var videoNav = subPage[navStart..navEnd];
 
@@ -80,7 +83,8 @@ namespace RhythmHelper
                 var videoLink = videoNav[linkStart..linkEnd];
 
                 if (!videoTitle.ToLower().Contains("searches related to") &&
-                    RestrictCheck(videoTitle, search, restrict))
+                    RestrictCheck(videoTitle.ToLower(), search.ToLower(), restrict) &&
+                    VideoLengthBounds(videoLength.ToLower(), min, max))
                     videos.Add(new YTVideo(
                         videoTitle, videoPublished, videoChannel, videoLength, videoViews, videoLink));
 
@@ -95,18 +99,59 @@ namespace RhythmHelper
 
             return videos.ToArray();
         }
+
+        private bool VideoLengthBounds(string length, TimeSpan min, TimeSpan max)
+        {
+            Log.Information($"Exe [BotMethods] VideoLengthBounds() Thread:{Thread.CurrentThread.ManagedThreadId}");
+
+            try
+            {
+                var words = length.Split(' ');
+
+                if (words[1].Contains("hour"))
+                    if (int.Parse(words[0].Trim()) >= 2) return false;
+
+                int hours = 0;
+                int minutes = 0;
+                int seconds = 0;
+
+                for (int i = 0; i < words.Length; i += 2)
+                {
+                    if (words[i+1].Contains("hour")) hours = int.Parse(words[i].Trim());
+                    else if (words[i + 1].Contains("minute")) minutes = int.Parse(words[i].Trim());
+                    else if (words[i + 1].Contains("second")) seconds = int.Parse(words[i].Trim());
+                }
+
+                if(hours >= 2) return false;
+
+                var videoTime = TimeSpan.Parse($"{hours}:{minutes}:{seconds}");
+
+                if (videoTime > max || videoTime < min) return false;
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"ERR [BotMethods] VideoLengthBounds() Thread:{Thread.CurrentThread.ManagedThreadId} \"{ex.Message}\"");
+
+                return false;
+            }
+
+            Log.Debug($"Rtn [BotMethods] VideoLengthBounds() Thread:{Thread.CurrentThread.ManagedThreadId} \"video within bounds\"");
+
+            return true;
+        }
+
         private bool RestrictCheck(string t, string s, RestrictType r)
         {
             Log.Information($"Exe [BotMethods] RestrictCheck() Thread:{Thread.CurrentThread.ManagedThreadId}");
 
-            string[] sWords = s.Split(' ');
+            string[] sWords = s.ToLower().Split(' ');
 
             if (r == RestrictType.Off) return true;
 
             else if (r == RestrictType.Partial)
             {
                 foreach (var word in sWords)
-                    if (t.Contains(word))
+                    if (t.ToLower().Contains(word))
                         return true;
             }
             else
@@ -115,7 +160,7 @@ namespace RhythmHelper
                 int matches = 0;
 
                 foreach (var word in sWords)
-                    if (t.Contains(word))
+                    if (t.ToLower().Contains(word))
                     {
                         t = t.Replace(word, "");
                         matches++;
@@ -131,6 +176,8 @@ namespace RhythmHelper
         private string GetPageData(string queryString)
         {
             Log.Information($"Exe [BotMethods] GetPageData() Thread:{Thread.CurrentThread.ManagedThreadId}");
+
+            if (string.IsNullOrWhiteSpace(queryString)) return null;
 
             string urlAddress = "https://www.youtube.com/results?search_query=" + queryString.Replace(' ', '+');
 
