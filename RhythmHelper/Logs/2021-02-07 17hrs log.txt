@@ -57,3 +57,173 @@
 2021-02-07 17:49:01.418 +00:00 [INF] 0Exe [Commands] DiceRoller() Thread:7
 2021-02-07 17:49:01.458 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
 2021-02-07 17:49:01.459 +00:00 [WRN]         ---****0 MSG [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 ":game_die: **20-sided** You rolled a dice for: :one::nine: [CRLF] "
+2021-02-07 17:53:04.122 +00:00 [WRN] 
+
+
+
+2021-02-07 17:53:04.146 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-07 17:53:04.164 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-07 17:53:04.309 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-07 17:53:10.433 +00:00 [WRN]         ---****0 CMD [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "!!search"
+2021-02-07 17:53:10.434 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-07 17:53:10.438 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-07 17:53:10.440 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-07 17:53:10.455 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:53:10.463 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-07 17:53:10.782 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-07 17:53:11.519 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-07 17:53:11.521 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-07 17:53:11.527 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-07 17:53:11.528 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:4 RhythmHelper.Data.Entities.Guild
+2021-02-07 17:53:11.529 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-07 17:53:11.530 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:53:11.534 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-07 17:53:11.535 +00:00 [INF] 0Exe [Commands] SearchYoutube() Thread:7
+2021-02-07 17:53:11.536 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-07 17:53:11.537 +00:00 [WRN]         ---****0 MSG [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "Must enter something to search for!"
+2021-02-07 17:53:24.919 +00:00 [WRN]         ---****1 CMD [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "!!search test"
+2021-02-07 17:53:24.920 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-07 17:53:24.920 +00:00 [INF] 1Exe [Commands] NewCommand() Thread:7
+2021-02-07 17:53:24.921 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-07 17:53:24.923 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:53:24.925 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9
+2021-02-07 17:53:24.926 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-07 17:53:24.932 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-07 17:53:24.940 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:6 RhythmHelper.Data.Entities.Guild
+2021-02-07 17:53:24.943 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-07 17:53:24.944 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:53:24.946 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9 RhythmHelper.Data.Entities.User
+2021-02-07 17:53:24.947 +00:00 [INF] 1Exe [Commands] SearchYoutube() Thread:7
+2021-02-07 17:53:24.956 +00:00 [INF] Exe [BotMethods] GetVideos() Thread:7
+2021-02-07 17:53:25.641 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:53:25.643 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:53:25.645 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:53:25.646 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:53:25.656 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:53:25.657 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:53:25.659 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:53:25.659 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:53:25.663 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:53:25.664 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:53:25.665 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:53:25.666 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:53:25.668 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:53:25.669 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:53:25.671 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:53:25.672 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:53:25.674 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:53:25.675 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:53:25.677 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:53:25.677 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:53:25.678 +00:00 [DBG] Rtn [BotMethods] GetVideos() Thread:7 "videos->arr: 0"
+2021-02-07 17:53:25.679 +00:00 [DBG] 1Rtn [Commands] SearchYoutube() Thread:7 "videos: 0"
+2021-02-07 17:53:25.680 +00:00 [DBG] 1Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-07 17:53:25.680 +00:00 [WRN]         ---****1 MSG [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "No videos found for search: 'test'. Try to simplify the search."
+2021-02-07 17:53:45.502 +00:00 [WRN]         ---****2 CMD [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "!!searchrestrict off"
+2021-02-07 17:53:45.503 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-07 17:53:45.504 +00:00 [INF] 2Exe [Commands] NewCommand() Thread:7
+2021-02-07 17:53:45.504 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-07 17:53:45.506 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:53:45.508 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6
+2021-02-07 17:53:45.509 +00:00 [INF] Exe Void MoveNext() Thread:6
+2021-02-07 17:53:45.511 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:13 RhythmHelper.Data.Entities.User
+2021-02-07 17:53:45.512 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:13 RhythmHelper.Data.Entities.Guild
+2021-02-07 17:53:45.513 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-07 17:53:45.514 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:53:45.515 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:13 RhythmHelper.Data.Entities.User
+2021-02-07 17:53:45.517 +00:00 [INF] 2Exe [Commands] SetSearchRestriction() Thread:7
+2021-02-07 17:53:45.519 +00:00 [INF] Exe [GetInfo] ChangeGuildRestrictionAsync Thread:7
+2021-02-07 17:53:45.520 +00:00 [INF] Exe Void Update[T](T) Thread:7
+2021-02-07 17:53:45.527 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:53:45.603 +00:00 [DBG] Rtn [GetInfo] ChangeGuildRestrictionAsync Thread:4 "changes saved"
+2021-02-07 17:53:45.604 +00:00 [DBG] 2Rtn [Commands] SetSearchRestriction() Thread:7 "Off"
+2021-02-07 17:53:45.605 +00:00 [DBG] 2Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-07 17:53:45.606 +00:00 [WRN]         ---****2 MSG [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "Search restrict set to: Off"
+2021-02-07 17:54:10.668 +00:00 [WRN]         ---****3 CMD [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "!!searchlength min 00:01:00 max 01:00:00"
+2021-02-07 17:54:10.669 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-07 17:54:10.670 +00:00 [INF] 3Exe [Commands] NewCommand() Thread:7
+2021-02-07 17:54:10.671 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-07 17:54:10.672 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:54:10.675 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9
+2021-02-07 17:54:10.676 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-07 17:54:10.681 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9 RhythmHelper.Data.Entities.User
+2021-02-07 17:54:10.682 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:9 RhythmHelper.Data.Entities.Guild
+2021-02-07 17:54:10.683 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-07 17:54:10.684 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:54:10.686 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9 RhythmHelper.Data.Entities.User
+2021-02-07 17:54:10.687 +00:00 [INF] 3Exe [Commands] SetSearchLength() Thread:7
+2021-02-07 17:54:10.690 +00:00 [INF] Exe [GetInfo] ChangeGuildVideoLengthsAsync Thread:7
+2021-02-07 17:54:10.692 +00:00 [INF] Exe Void Update[T](T) Thread:7
+2021-02-07 17:54:10.693 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:54:10.697 +00:00 [DBG] Rtn [GetInfo] ChangeGuildDiceDefaultAsync Thread:9 "changes saved"
+2021-02-07 17:54:10.698 +00:00 [DBG] 3Rtn [Commands] SetSearchLength() Thread:7 ""
+2021-02-07 17:54:10.699 +00:00 [DBG] 3Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-07 17:54:10.700 +00:00 [WRN]         ---****3 MSG [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "Search will only show videos of min length: **  1 minutes,  0 seconds** and a max length: ** 1 hours,  0 minutes,  0 seconds**"
+2021-02-07 17:54:20.068 +00:00 [WRN]         ---****4 CMD [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "!!search test"
+2021-02-07 17:54:20.069 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-07 17:54:20.070 +00:00 [INF] 4Exe [Commands] NewCommand() Thread:7
+2021-02-07 17:54:20.071 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-07 17:54:20.072 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:54:20.074 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9
+2021-02-07 17:54:20.075 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-07 17:54:20.076 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11 RhythmHelper.Data.Entities.User
+2021-02-07 17:54:20.077 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:11 RhythmHelper.Data.Entities.Guild
+2021-02-07 17:54:20.078 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-07 17:54:20.080 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:54:20.082 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-07 17:54:20.082 +00:00 [INF] 4Exe [Commands] SearchYoutube() Thread:7
+2021-02-07 17:54:20.083 +00:00 [INF] Exe [BotMethods] GetVideos() Thread:7
+2021-02-07 17:54:21.000 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:54:21.001 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:54:21.004 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:7 "video within bounds"
+2021-02-07 17:54:21.005 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-07 17:54:21.006 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-07 17:54:21.007 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:54:21.008 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:54:21.008 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:7 "video within bounds"
+2021-02-07 17:54:21.009 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-07 17:54:21.010 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-07 17:54:21.014 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:54:21.014 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:54:21.015 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:7 "video within bounds"
+2021-02-07 17:54:21.016 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-07 17:54:21.017 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-07 17:54:21.019 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:54:21.020 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:54:21.021 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:7 "video within bounds"
+2021-02-07 17:54:21.022 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-07 17:54:21.022 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-07 17:54:21.024 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:54:21.025 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:54:21.026 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:7 "video within bounds"
+2021-02-07 17:54:21.027 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-07 17:54:21.027 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-07 17:54:21.029 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:54:21.030 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:54:21.031 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:7 "video within bounds"
+2021-02-07 17:54:21.031 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-07 17:54:21.032 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-07 17:54:21.034 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:54:21.035 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:54:21.036 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:7 "video within bounds"
+2021-02-07 17:54:21.036 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-07 17:54:21.037 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-07 17:54:21.039 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:54:21.040 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:54:21.040 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:7 "video within bounds"
+2021-02-07 17:54:21.041 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-07 17:54:21.042 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-07 17:54:21.044 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:54:21.044 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:54:21.045 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:7 "video within bounds"
+2021-02-07 17:54:21.046 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-07 17:54:21.046 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-07 17:54:21.049 +00:00 [INF] Exe [BotMethods] RestrictCheck() Thread:7
+2021-02-07 17:54:21.050 +00:00 [INF] Exe [BotMethods] VideoLengthBounds() Thread:7
+2021-02-07 17:54:21.051 +00:00 [DBG] Rtn [BotMethods] VideoLengthBounds() Thread:7 "video within bounds"
+2021-02-07 17:54:21.051 +00:00 [INF] Ctor [YTVideo] YTVideo() Thread:7
+2021-02-07 17:54:21.052 +00:00 [DBG] Fin [YTVideo] YTVideo() Thread:7 "init repo"
+2021-02-07 17:54:21.053 +00:00 [DBG] Rtn [BotMethods] GetVideos() Thread:7 "videos->arr: 10"
+2021-02-07 17:54:21.054 +00:00 [DBG] 4Rtn [Commands] SearchYoutube() Thread:7 "videos: 9"
+2021-02-07 17:54:21.054 +00:00 [DBG] 4Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-07 17:54:21.055 +00:00 [WRN]         ---****4 MSG [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "1- ***Test \" Im Popular \" (Official Video)"*** By 5 months ago" (**Test410"**), 374,091 views", **3 minutes, 23 seconds"** - *Copy this to play*:```!play www.youtube.com/channel/UCFz9Bw97E3IS_THodWWLfqQ"```2- ***Intence - Aids Test Ep2 (Official Music Video)"*** By 5 months ago" (**IntenceVEVO"**), 374,091 views", **3 minutes, 23 seconds"** - *Copy this to play*:```!play www.youtube.com/watch?v=irhR5SkqswE"```3- ***Intence - Aids Test Ep2 (Official Music Video)"*** By 2 hours ago" (**IntenceVEVO"**), 58,252 views", **3 minutes, 19 seconds"** - *Copy this to play*:```!play www.youtube.com/channel/UCFz9Bw97E3IS_THodWWLfqQ"```4- ***Intence - Aids Test Ep2 (Official Music Video)"*** By 2 hours ago" (**IntenceVEVO"**), 58,252 views", **3 minutes, 19 seconds"** - *Copy this to play*:```!play www.youtube.com/channel/UCFz9Bw97E3IS_THodWWLfqQ"```5- ***Intence - Aids Test Ep2 (Official Music Video)"*** By 2 hours ago" (**IntenceVEVO"**), 58,252 views", **3 minutes, 19 seconds"** - *Copy this to play*:```!play www.youtube.com/channel/UCFz9Bw97E3IS_THodWWLfqQ"```6- ***Intence - Aids Test Ep2 (Official Music Video)"*** By 2 hours ago" (**IntenceVEVO"**), 58,252 views", **3 minutes, 19 seconds"** - *Copy this to play*:```!play www.youtube.com/channel/UC4L9nWU5oQo4BrnoHW96ziQ"```7- ***A Color Test That Can Tell Your Mental Age"*** By 2 hours ago" (**BRIGHT SIDE"**), 58,252 views", **3 minutes, 19 seconds"** - *Copy this to play*:```!play www.youtube.com/watch?v=Hlsq0uuWgPE"```8- ***A Color Test That Can Tell Your Mental Age"*** By 2 years ago" (**BRIGHT SIDE"**), 34,927,918 views", **7 minutes, 37 seconds"** - *Copy this to play*:```!play www.youtube.com/channel/UC4L9nWU5oQo4BrnoHW96ziQ"```9- ***A Color Test That Can Tell Your Mental Age"*** By 2 years ago" (**BRIGHT SIDE"**), 34,927,918 views", **7 minutes, 37 seconds"** - *Copy this to play*:```!play www.youtube.com/channel/UC4L9nWU5oQo4BrnoHW96ziQ"```"

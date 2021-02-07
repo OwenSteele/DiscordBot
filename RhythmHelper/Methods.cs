@@ -15,20 +15,6 @@ namespace RhythmHelper
 {
     public class BotMethodsNative
     {
-        private static readonly Dictionary<string, string> _numberEmojis = new Dictionary<string, string>
-        {
-            {"0", ":zero:" },
-            {"1", ":one:" },
-            {"2", ":two:" },
-            {"3", ":three:" },
-            {"4", ":four:" },
-            {"5", ":five:" },
-            {"6", ":six:" },
-            {"7", ":seven:" },
-            {"8", ":eight:" },
-            {"9", ":nine:" }
-        };
-
         public YTVideo[] GetVideos(int limit, RestrictType restrict, string search, TimeSpan min, TimeSpan max)
         {
             Log.Information($"Exe [BotMethods] GetVideos() Thread:{Thread.CurrentThread.ManagedThreadId}");
@@ -140,59 +126,7 @@ namespace RhythmHelper
 
             return false;
         }
-        //private string GetPageData(string queryString)
-        //{
-        //    Log.Information($"Exe [BotMethods] GetPageData() Thread:{Thread.CurrentThread.ManagedThreadId}");
-
-        //    if (string.IsNullOrWhiteSpace(queryString)) return null;
-
-        //    string urlAddress = "https://www.youtube.com/results?search_query=" + queryString.Replace(' ', '+');
-
-        //    var request = (HttpWebRequest)WebRequest.Create(urlAddress);
-        //    var response = (HttpWebResponse)request.GetResponse();
-
-        //    if (response.StatusCode == HttpStatusCode.OK)
-        //    {
-        //        Stream receiveStream = response.GetResponseStream();
-        //        StreamReader readStream;
-
-        //        if (string.IsNullOrWhiteSpace(response.CharacterSet))
-        //            readStream = new StreamReader(receiveStream);
-        //        else
-        //            readStream = new StreamReader(receiveStream, Encoding.GetEncoding(response.CharacterSet));
-
-        //        string data = readStream.ReadToEnd();
-
-        //        response.Close();
-        //        readStream.Close();
-
-        //        string jsonStartTag = "estimatedResults";
-        //        int jsonStartTagIndex = data.IndexOf(jsonStartTag);
-
-        //        return data[jsonStartTagIndex..];
-        //    }
-
-        //    Log.Error($"Rtn [BotMethods] GetPageData() Thread:{Thread.CurrentThread.ManagedThreadId} \"{response.StatusCode}\"");
-
-        //    return "Error";
-        //}
-
-        //public string GetNumberEmojis(int value)
-        //{
-        //    Log.Information($"Exe [BotMethods] GetNumberEmojis() Thread:{Thread.CurrentThread.ManagedThreadId}");
-
-        //    var numbers = value.ToString();
-
-        //    var emojis = new string[numbers.Length];
-
-        //    for (int i = 0; i < numbers.Length; i++)
-        //        emojis[i] = _numberEmojis.GetValueOrDefault(numbers[i].ToString());
-
-        //    Log.Debug($"Rtn [BotMethods] GetNumberEmojis() Thread:{Thread.CurrentThread.ManagedThreadId} \"emojis# {emojis.Length}\"");
-
-        //    return string.Join("", emojis);
-        //}
-
+      
         public async Task<bool> PostFeedbackToLogFileAsync(string log)
         {
             Log.Information($"Exe [BotMethods] PostFeedbackToLogFileAsync() Thread:{Thread.CurrentThread.ManagedThreadId}");
