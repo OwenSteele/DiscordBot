@@ -9,9 +9,11 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
+using static BotMethods;
+
 namespace RhythmHelper
 {
-    public class BotMethods
+    public class BotMethodsNative
     {
         private static readonly Dictionary<string, string> _numberEmojis = new Dictionary<string, string>
         {
@@ -41,54 +43,19 @@ namespace RhythmHelper
             int charPos = 0;
             int pageLen = pageJson.Length;
 
-            var titleInnerHtml = new string[] { "\"title\":{\"runs\":[{\"text\":\"", "\"}]" };
-            var channelInnerHtml = new string[] { "\"longBylineText\":{\"runs\":[{\"text\":\"", "\"," };
-            var publishedInnerHtml = new string[] { "\"publishedTimeText\":{\"simpleText\":\"", "\"}" };
-            var lengthInnerHtml = new string[] { "\"lengthText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"", "\"}" };
-            var viewInnerHtml = new string[] { "\"viewCountText\":{\"simpleText\":\"", "\"}" };
-            var navInnerHtml = new string[] { "\"navigationEndpoint\":{\"", "\"}}," };
-            var linkInnerHtml = new string[] { "\"url\":\"", "\"," };
-
             do
             {
                 var subPage = pageJson[charPos..];
 
-                int titleStart = subPage.IndexOf(titleInnerHtml[0]) + titleInnerHtml[0].Length;
-                int titleEnd = subPage.IndexOf(titleInnerHtml[1], titleStart);
-                int channelStart = subPage.IndexOf(channelInnerHtml[0]) + channelInnerHtml[0].Length;
-                int channelEnd = subPage.IndexOf(channelInnerHtml[1], channelStart);
-                int publishedStart = subPage.IndexOf(publishedInnerHtml[0]) + publishedInnerHtml[0].Length;
-                int publishedEnd = subPage.IndexOf(publishedInnerHtml[1], publishedStart);
-                int lengthStart = subPage.IndexOf(lengthInnerHtml[0]) + lengthInnerHtml[0].Length;
-                int lengthEnd = subPage.IndexOf(lengthInnerHtml[1], lengthStart);
-                int viewStart = subPage.IndexOf(viewInnerHtml[0]) + viewInnerHtml[0].Length;
-                int viewEnd = subPage.IndexOf(viewInnerHtml[1], viewStart);
-                int navStart = subPage.IndexOf(navInnerHtml[0], viewEnd) + navInnerHtml[0].Length;
-                int navEnd = subPage.IndexOf(navInnerHtml[1], navStart);
+                var newVideo = GetVideo(pageJson[charPos..]);
 
-                var videoTitle = subPage[titleStart..titleEnd];
-
-                var videoChannel = subPage[channelStart..channelEnd];
-                var videoPublished = subPage[publishedStart..publishedEnd];
-                var videoLength = subPage[lengthStart..lengthEnd];
-
-                
-
-                var videoViews = subPage[viewStart..viewEnd];
-                var videoNav = subPage[navStart..navEnd];
-
-                int linkStart = videoNav.IndexOf(linkInnerHtml[0]) + linkInnerHtml[0].Length;
-                int linkEnd = videoNav.IndexOf(linkInnerHtml[1], linkStart);
-
-                var videoLink = videoNav[linkStart..linkEnd];
-
-                if (!videoTitle.ToLower().Contains("searches related to") &&
-                    RestrictCheck(videoTitle.ToLower(), search.ToLower(), restrict) &&
-                    VideoLengthBounds(videoLength.ToLower(), min, max))
+                if (!newVideo.Title.ToLower().Contains("searches related to") &&
+                    RestrictCheck(newVideo.Title.ToLower(), search.ToLower(), restrict) &&
+                    VideoLengthBounds(newVideo.Time.ToLower(), min, max))
                     videos.Add(new YTVideo(
-                        videoTitle, videoPublished, videoChannel, videoLength, videoViews, videoLink));
+                        newVideo.Title, newVideo.Published, newVideo.Channel, newVideo.Time, newVideo.Views, newVideo.Link));
 
-                charPos += navEnd + linkEnd;
+                charPos += newVideo.CharPosition;
                 i++;
 
                 if (i >= amount) break;
@@ -173,58 +140,58 @@ namespace RhythmHelper
 
             return false;
         }
-        private string GetPageData(string queryString)
-        {
-            Log.Information($"Exe [BotMethods] GetPageData() Thread:{Thread.CurrentThread.ManagedThreadId}");
+        //private string GetPageData(string queryString)
+        //{
+        //    Log.Information($"Exe [BotMethods] GetPageData() Thread:{Thread.CurrentThread.ManagedThreadId}");
 
-            if (string.IsNullOrWhiteSpace(queryString)) return null;
+        //    if (string.IsNullOrWhiteSpace(queryString)) return null;
 
-            string urlAddress = "https://www.youtube.com/results?search_query=" + queryString.Replace(' ', '+');
+        //    string urlAddress = "https://www.youtube.com/results?search_query=" + queryString.Replace(' ', '+');
 
-            var request = (HttpWebRequest)WebRequest.Create(urlAddress);
-            var response = (HttpWebResponse)request.GetResponse();
+        //    var request = (HttpWebRequest)WebRequest.Create(urlAddress);
+        //    var response = (HttpWebResponse)request.GetResponse();
 
-            if (response.StatusCode == HttpStatusCode.OK)
-            {
-                Stream receiveStream = response.GetResponseStream();
-                StreamReader readStream;
+        //    if (response.StatusCode == HttpStatusCode.OK)
+        //    {
+        //        Stream receiveStream = response.GetResponseStream();
+        //        StreamReader readStream;
 
-                if (string.IsNullOrWhiteSpace(response.CharacterSet))
-                    readStream = new StreamReader(receiveStream);
-                else
-                    readStream = new StreamReader(receiveStream, Encoding.GetEncoding(response.CharacterSet));
+        //        if (string.IsNullOrWhiteSpace(response.CharacterSet))
+        //            readStream = new StreamReader(receiveStream);
+        //        else
+        //            readStream = new StreamReader(receiveStream, Encoding.GetEncoding(response.CharacterSet));
 
-                string data = readStream.ReadToEnd();
+        //        string data = readStream.ReadToEnd();
 
-                response.Close();
-                readStream.Close();
+        //        response.Close();
+        //        readStream.Close();
 
-                string jsonStartTag = "estimatedResults";
-                int jsonStartTagIndex = data.IndexOf(jsonStartTag);
+        //        string jsonStartTag = "estimatedResults";
+        //        int jsonStartTagIndex = data.IndexOf(jsonStartTag);
 
-                return data[jsonStartTagIndex..];
-            }
+        //        return data[jsonStartTagIndex..];
+        //    }
 
-            Log.Error($"Rtn [BotMethods] GetPageData() Thread:{Thread.CurrentThread.ManagedThreadId} \"{response.StatusCode}\"");
+        //    Log.Error($"Rtn [BotMethods] GetPageData() Thread:{Thread.CurrentThread.ManagedThreadId} \"{response.StatusCode}\"");
 
-            return "Error";
-        }
+        //    return "Error";
+        //}
 
-        public string GetNumberEmojis(int value)
-        {
-            Log.Information($"Exe [BotMethods] GetNumberEmojis() Thread:{Thread.CurrentThread.ManagedThreadId}");
+        //public string GetNumberEmojis(int value)
+        //{
+        //    Log.Information($"Exe [BotMethods] GetNumberEmojis() Thread:{Thread.CurrentThread.ManagedThreadId}");
 
-            var numbers = value.ToString();
+        //    var numbers = value.ToString();
 
-            var emojis = new string[numbers.Length];
+        //    var emojis = new string[numbers.Length];
 
-            for (int i = 0; i < numbers.Length; i++)
-                emojis[i] = _numberEmojis.GetValueOrDefault(numbers[i].ToString());
+        //    for (int i = 0; i < numbers.Length; i++)
+        //        emojis[i] = _numberEmojis.GetValueOrDefault(numbers[i].ToString());
 
-            Log.Debug($"Rtn [BotMethods] GetNumberEmojis() Thread:{Thread.CurrentThread.ManagedThreadId} \"emojis# {emojis.Length}\"");
+        //    Log.Debug($"Rtn [BotMethods] GetNumberEmojis() Thread:{Thread.CurrentThread.ManagedThreadId} \"emojis# {emojis.Length}\"");
 
-            return string.Join("", emojis);
-        }
+        //    return string.Join("", emojis);
+        //}
 
         public async Task<bool> PostFeedbackToLogFileAsync(string log)
         {

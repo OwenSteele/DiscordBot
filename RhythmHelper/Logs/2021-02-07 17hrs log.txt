@@ -1,0 +1,59 @@
+2021-02-07 17:36:11.570 +00:00 [WRN] 
+
+
+
+2021-02-07 17:36:11.593 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-07 17:36:11.613 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-07 17:36:11.778 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-07 17:36:17.669 +00:00 [WRN]         ---****0 CMD [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "!!dice"
+2021-02-07 17:36:17.673 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-07 17:36:17.677 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-07 17:36:17.679 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-07 17:36:17.700 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:36:17.710 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-07 17:36:18.059 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-07 17:36:19.270 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6
+2021-02-07 17:36:19.273 +00:00 [INF] Exe Void MoveNext() Thread:6
+2021-02-07 17:36:19.281 +00:00 [INF] Exe [GetInfo] UpdateUserAsync Thread:9
+2021-02-07 17:36:19.282 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-07 17:36:19.286 +00:00 [INF] Exe Void Update[T](T) Thread:6
+2021-02-07 17:36:19.292 +00:00 [INF] Exe Void MoveNext() Thread:6
+2021-02-07 17:36:19.376 +00:00 [DBG] Rtn [GetInfo] UpdateUserAsync Thread:4 "changes saved"
+2021-02-07 17:36:19.377 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-07 17:36:19.379 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:11 RhythmHelper.Data.Entities.User
+2021-02-07 17:36:19.380 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:11 RhythmHelper.Data.Entities.Guild
+2021-02-07 17:36:19.381 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-07 17:36:19.382 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:36:19.384 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-07 17:36:19.410 +00:00 [INF] 0Exe [Commands] DiceRoller() Thread:7
+2021-02-07 17:38:50.355 +00:00 [WRN] 
+
+
+
+2021-02-07 17:38:50.379 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-07 17:38:50.397 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-07 17:38:50.556 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-07 17:48:54.079 +00:00 [WRN] 
+
+
+
+2021-02-07 17:48:54.100 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-07 17:48:54.118 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-07 17:48:54.260 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-07 17:48:59.826 +00:00 [WRN]         ---****0 CMD [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 "!!dice"
+2021-02-07 17:48:59.828 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:7
+2021-02-07 17:48:59.832 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:7
+2021-02-07 17:48:59.833 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:7
+2021-02-07 17:48:59.847 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:48:59.856 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:7
+2021-02-07 17:49:00.171 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:7
+2021-02-07 17:49:01.378 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-07 17:49:01.381 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-07 17:49:01.387 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9 RhythmHelper.Data.Entities.User
+2021-02-07 17:49:01.389 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:9 RhythmHelper.Data.Entities.Guild
+2021-02-07 17:49:01.390 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:7
+2021-02-07 17:49:01.391 +00:00 [INF] Exe Void MoveNext() Thread:7
+2021-02-07 17:49:01.394 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6 RhythmHelper.Data.Entities.User
+2021-02-07 17:49:01.418 +00:00 [INF] 0Exe [Commands] DiceRoller() Thread:7
+2021-02-07 17:49:01.458 +00:00 [DBG] 0Rtn [Commands] NewCommand() Thread:7 returning command.
+2021-02-07 17:49:01.459 +00:00 [WRN]         ---****0 MSG [Bot] (Ø_'s server::goobot-things::Ø_) Thread:7 ":game_die: **20-sided** You rolled a dice for: :one::nine: [CRLF] "

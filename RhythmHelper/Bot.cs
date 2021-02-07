@@ -13,7 +13,7 @@ namespace RhythmHelper
     {
         private DiscordSocketClient _client;
         private GetInfo _info;
-        private BotMethods _methods;
+        private BotMethodsNative _methods;
 
         private int _message = 0;
 
@@ -70,7 +70,7 @@ namespace RhythmHelper
 
             if (guild != null) guildName = guild.Name;
 
-            Log.Debug($"        ---****{msgVal} CMD [Bot] ({(guildName ?? "GuildNameNull")}) ({socketMessage.Author.Username}) Thread:{Thread.CurrentThread.ManagedThreadId} \"{socketMessage.Content.Replace("\n", " [CRLF] ")}\"");
+            Log.Warning($"        ---****{msgVal} CMD [Bot] ({(guildName ?? "GuildNameNull")}::{(channel.Name ?? "channelNameNull")}::{socketMessage.Author.Username}) Thread:{Thread.CurrentThread.ManagedThreadId} \"{socketMessage.Content.Replace("\n", " [CRLF] ")}\"");
 
             try
             {
@@ -85,7 +85,7 @@ namespace RhythmHelper
                 Log.Error($"---ERROR [Bot] ({(guildName ?? "GuildNameNull")}) ({socketMessage.Author.Username}) Thread:{Thread.CurrentThread.ManagedThreadId} Error: '{ex.Message}' \"{result.Replace("\n", " [CRLF] ")}\"");
             }
 
-            Log.Debug($"        ---****{msgVal} MSG [Bot] ({(guildName ?? "GuildNameNull")}) ({socketMessage.Author.Username}) Thread:{Thread.CurrentThread.ManagedThreadId} \"{result.Replace("\n", " [CRLF] ")}\"");
+            Log.Warning($"        ---****{msgVal} MSG [Bot] ({(guildName ?? "GuildNameNull")}::{(channel.Name ?? "channelNameNull")}::{socketMessage.Author.Username}) Thread:{Thread.CurrentThread.ManagedThreadId} \"{result.Replace("\n", " [CRLF] ")}\"");
 
             if (result.Length >= 2000) result = result[..1999];
 

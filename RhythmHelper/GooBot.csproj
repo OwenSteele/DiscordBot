@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CommandMethods\CommandMethods.fsproj" />
     <ProjectReference Include="..\RhythmHelper.Data\GooBot.Data.csproj" />
   </ItemGroup>
 

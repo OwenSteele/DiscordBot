@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GooBot", "GooBot.csproj", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GooBot.Data", "..\RhythmHelper.Data\GooBot.Data.csproj", "{60F301FE-1ECD-4BE8-9358-E7F5D7B1106C}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "CommandMethods", "..\CommandMethods\CommandMethods.fsproj", "{AE7D55E8-D99D-4530-A61C-649235012876}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{60F301FE-1ECD-4BE8-9358-E7F5D7B1106C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60F301FE-1ECD-4BE8-9358-E7F5D7B1106C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60F301FE-1ECD-4BE8-9358-E7F5D7B1106C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE7D55E8-D99D-4530-A61C-649235012876}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7D55E8-D99D-4530-A61C-649235012876}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7D55E8-D99D-4530-A61C-649235012876}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7D55E8-D99D-4530-A61C-649235012876}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

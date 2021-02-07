@@ -9,13 +9,16 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 
+using static BotMethods;
+
+
 namespace RhythmHelper
 {
     public class Commands
     {
         private readonly SocketMessage _socketMessage;
         private readonly GetInfo _info;
-        private readonly BotMethods _methods;
+        private readonly BotMethodsNative _methods;
         private readonly Dictionary<string, (string, Func<string>)> _allCommands;
 
         private Guild _guild;
@@ -26,7 +29,7 @@ namespace RhythmHelper
 
         public int MsgVal { get; }
 
-        public Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods, int msgVal)
+        public Commands(SocketMessage socketMessage, ref GetInfo info, BotMethodsNative methods, int msgVal)
         {
             Log.Information($"{MsgVal}Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:{Thread.CurrentThread.ManagedThreadId}");
 
@@ -56,32 +59,32 @@ namespace RhythmHelper
                 },
                 {
                    "searchrestrict",
-                   ($"set how closely a video must match the search options '{RestrictType.Off}', '{RestrictType.Partial}', '{RestrictType.Full}' - *e.g. !!searchrestrict full*",
+                   ($"set how closely a video must match the search options '{RestrictType.Off}', '{RestrictType.Partial}', '{RestrictType.Full}'",
                    SetSearchRestriction)
                 },
                 {
                    "searchlength",
-                   ($"set the min or max length of the videos returned (can set only min or max - *e.g. !!searchlength min 00:20:11 max 01:00:00* = videos bewteen 20mins 11s and 1 hour only will be returned",
+                   ($"set the min or max length of the videos returned (can set only min or max - *e.g. !!searchlength min 00:20:11 max 01:00:00*",
                    SetSearchLength)
                 },
                 {
                    "dice",
-                   ($"roll a dice (optional: [mutliple] mentions = rolls for those people) \n**Dice is cryptographically generated for true-randomess**\n     e.g.*!!dice @someone @someoneElse 11* = a 11-sided dice is rolled for each person mentioned.",
+                   ($"roll a crypto-dice (optional: [mutliple] mentions = rolls for those people)e.g.*!!dice @someone @someoneElse* = dice is rolled for each person.",
                    DiceRoller)
                 },
                 {
                    "dicedefault",
-                   ($"set the default number of side for the diceroll command - *e.g. !!dicedefault 20*",
+                   ($"set the default number of side for the diceroll - *e.g. !!dicedefault 20*",
                    SetDiceRollerDefault)
                 },
                 {
                    "dicedist",
-                   ($"Show the distribution of the crypto-die. MUST INCLUDE iteration count < 100000.",
+                   ($"Show the distribution of the crypto-die. INCLUDE iteration count.",
                    GetDiceRollerDistribution)
                 },
                 {
                    "changeprefix",
-                   ($"change the prefix for the bot (must be between 1 to 3 characters long) - *e.g. !!changeprefix @@@*",
+                   ($"change the prefix for the bot (1 to 3 chars long) - *e.g. !!changeprefix @@@*",
                    SetPrefix)
                 },
                 {
@@ -91,7 +94,7 @@ namespace RhythmHelper
                 },
                 {
                    "botfeedback",
-                   ($"give me feedback on: issues, deepest desires (for new commands), suggested changes etc.",
+                   ($"give me feedback on: issues, desires (for new commands), changes etc.",
                    GiveFeedback)
                 },
                 {
@@ -101,7 +104,7 @@ namespace RhythmHelper
                 },
                 {
                    "checkopoints",
-                   ($"check Ø points by a mention or multiple mentions/everyone - *!!checkopoints @someone/@everone/@someone @someoneElse* = to see all mentioned peoples' Ø points",
+                   ($"check Ø points by a (multiple) mentions - *!!checkopoints @someone* = to see all mentioned people[s] Ø points",
                    CheckOPoints)
                 },
                 {
@@ -450,16 +453,16 @@ namespace RhythmHelper
             var rollValue = RNG.Roll(value);
 
             if (_mentions.Length == 0)
-                return $":game_die: **{value}-sided** You rolled a dice for: {_methods.GetNumberEmojis(rollValue)}\n";
+                return $":game_die: **{value}-sided** You rolled a dice for: {GetNumberEmojis(rollValue)}\n";
 
             if (_mentions.Length == 1)
-                return $":game_die: **{value}-sided** Dice Rolled for ***{_mentions[0].Username}***: {_methods.GetNumberEmojis(rollValue)}\n";
+                return $":game_die: **{value}-sided** Dice Rolled for ***{_mentions[0].Username}***: {GetNumberEmojis(rollValue)}\n";
 
             var sb = new StringBuilder();
 
             foreach (var mtn in _mentions)
             {
-                sb.Append($":game_die: **{value}-sided** Dice Rolled for ***{mtn.Username}***: {_methods.GetNumberEmojis(rollValue)}\n");
+                sb.Append($":game_die: **{value}-sided** Dice Rolled for ***{mtn.Username}***: {GetNumberEmojis(rollValue)}\n");
                 rollValue = RNG.Roll(value);
             }
 
