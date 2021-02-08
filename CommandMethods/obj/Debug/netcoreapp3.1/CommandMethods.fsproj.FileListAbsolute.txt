@@ -67,3 +67,5 @@ C:\Users\owenf\source\repos\GooBotDiscord\CommandMethods\obj\Debug\netcoreapp3.1
 C:\Users\owenf\source\repos\GooBotDiscord\CommandMethods\obj\Debug\netcoreapp3.1\CommandMethods.dll
 C:\Users\owenf\source\repos\GooBotDiscord\CommandMethods\obj\Debug\netcoreapp3.1\CommandMethods.pdb
 C:\Users\owenf\source\repos\GooBotDiscord\CommandMethods\obj\Debug\netcoreapp3.1\CommandMethods.genruntimeconfig.cache
+C:\Users\owenf\source\repos\GooBotDiscord\CommandMethods\bin\Debug\netcoreapp3.1\FSharp.Json.dll
+C:\Users\owenf\source\repos\GooBotDiscord\CommandMethods\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

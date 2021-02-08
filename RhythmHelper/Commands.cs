@@ -4,6 +4,7 @@ using RhythmHelper.Data.Entities;
 using Serilog;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -609,7 +610,7 @@ namespace RhythmHelper
 
             if (string.IsNullOrWhiteSpace(_msg)) return "Must enter something to search for!";
 
-            var videos = _methods.GetVideos(_guild.Limit, _guild.Restrict, _msg, _guild.VideoLengthMin,_guild.VideoLengthMax);
+            var videos = GetVideos(_guild.Limit, _guild.Restrict.ToString(), _msg, _guild.VideoLengthMin,_guild.VideoLengthMax);
 
             var videosInfo = new List<string>();
 
@@ -617,7 +618,7 @@ namespace RhythmHelper
 
             foreach (var video in videos)
             {
-                string partial = $"{videosInfo.Count + 1}- ***{video.Title}*** By {video.Channel} (**{video.Published}**), {video.ViewsCount}, **{video.VideoLength}** - *Copy this to play*:" +
+                string partial = $"{videosInfo.Count + 1}- ***{video.Title}*** By {video.Channel} (**{video.Published}**), {video.Views}, **{video.Time}** - *Copy this to play*:" +
                     $"```!play www.youtube.com{video.Link}```";
 
                 if (messageLength + partial.Length >= 2000) break;
@@ -646,7 +647,20 @@ namespace RhythmHelper
             sb.Append($"User: '{_user.Username}' ('{_user.Discriminator}')");
             sb.Append($"\n  Message: '{_msg}'");
 
-            if (!_methods.PostFeedbackToLogFileAsync(sb.ToString()).Result) return "Couldn't post feedback sorry - DM @Ø_#0921 instead?";
+            var path = @$"..\..\..\Feedback\botfeedback {DateTime.Now:yyyy-MM-dd}.txt";
+
+            try
+            {
+                using StreamWriter sw = File.AppendText(path);
+
+                sw.WriteLineAsync(sb.ToString()).Wait();
+            }
+            catch (Exception ex)
+            {
+                Log.Error($"EXH [Commands] GiveFeedback() Thread:{Thread.CurrentThread.ManagedThreadId} \"{ex.Message}\"");
+
+                return "Couldn't post feedback sorry - DM @Ø_#0921 instead?";
+            }
 
             Log.Debug($"{MsgVal}Rtn [Commands] GiveFeedback() Thread:{Thread.CurrentThread.ManagedThreadId} \"Feedback thanks\"");
 

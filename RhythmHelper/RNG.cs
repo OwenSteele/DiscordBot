@@ -62,20 +62,20 @@ namespace GooBot
 
             return sb.ToString();
         }
-        private static double CalculateStandardDeviation(IEnumerable<double> values)
-        {
-            double standardDeviation = 0;
+        //private static double CalculateStandardDeviation(IEnumerable<double> values)
+        //{
+        //    double standardDeviation = 0;
 
-            if (values.Any())
-            { 
-                double avg = values.Average();
+        //    if (values.Any())
+        //    { 
+        //        double avg = values.Average();
      
-                double sum = values.Sum(d => Math.Pow(d - avg, 2));
+        //        double sum = values.Sum(d => Math.Pow(d - avg, 2));
 
-                standardDeviation = Math.Sqrt((sum) / (values.Count() - 1));
-            }
+        //        standardDeviation = Math.Sqrt((sum) / (values.Count() - 1));
+        //    }
 
-            return standardDeviation;
-        }
+        //    return standardDeviation;
+        //}
     }
 }

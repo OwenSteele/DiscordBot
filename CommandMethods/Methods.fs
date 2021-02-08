@@ -1,12 +1,10 @@
 ﻿module BotMethods
+open Microsoft.FSharp.Core
 
 type YTVideo(title : string, published : string, channel : string, videoLength : string, viewsCount : string, link : string, charPosition : int) =
-    
-    let validString str =
-        
+    let validString str =        
         if System.String.IsNullOrWhiteSpace str then
             raise (System.ArgumentException("Properties cannot be null"))
-
     do 
         validString title
         validString published
@@ -14,7 +12,6 @@ type YTVideo(title : string, published : string, channel : string, videoLength :
         validString videoLength
         validString viewsCount
         validString link
-
     member val Title = title with get, set
     member val Published = published with get, set
     member val Channel = channel with get, set
@@ -47,10 +44,8 @@ let GetPageData (searchTerm : string) : string =
     use recieveStream = response.GetResponseStream()
     use readStream = new System.IO.StreamReader(recieveStream)
     let data = readStream.ReadToEnd()
-    let jsonStart = data.IndexOf("estimatedResults")
 
-    data.[jsonStart..]
-
+    data.[data.IndexOf("estimatedResults")..]
 
 let GetVideo (pageSection) : YTVideo =   
 
@@ -64,10 +59,25 @@ let GetVideo (pageSection) : YTVideo =
 
     YTVideo(title,channel,published,length,view,link, VideoEndPos pageSection nav)
 
+let MatchWord (search : string) (word : string) =
+    match search.ToLower() with
+    | x when x.Contains(word.ToLower()) -> true
+    | _ -> false
 
-//let GetVideos (limit : int) (restrict : string) (search : string) (min : System.TimeSpan) (max : System.TimeSpan) : YTVideo =
+let RestrictCheck (title : string) (searchTerm : string) (restriction : string) =
+    let r =
+        match restriction.ToLower() with        
+        | "partial" -> 1
+        | "full" -> searchTerm.Split ' ' |> Array.length
+        | _ -> 0
+
+    title.Split ' ' |> Array.filter (fun w -> MatchWord searchTerm w) |> Array.length |> (fun x -> x >= r)
+
+//let TimeUnit (value : string) (unit : string) =
+//let VideoBounds (length : string) (min : System.TimeSpan) (max : System.TimeSpan) =
+     
+let GetVideos (limit : int) (restrict : string) (search : string) (min : System.TimeSpan) (max : System.TimeSpan) : YTVideo[] =
     
-//    let pageJson = GetPageData search
-//    let amount = LimitBounds limit
-
-//    let mutable charPos : int = 0
+    let pageJson = GetPageData search
+    [| for section in pageJson.Split ",{\"videoRenderer\":{" -> GetVideo section |]
+    |> Array.filter (fun video -> RestrictCheck video.Title search restrict)

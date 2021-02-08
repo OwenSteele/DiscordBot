@@ -19,7 +19,9 @@
     <Import Project="$(NuGetPackageRoot)fsharp.compiler.tools\10.2.3\build\FSharp.Compiler.Tools.props" Condition="Exists('$(NuGetPackageRoot)fsharp.compiler.tools\10.2.3\build\FSharp.Compiler.Tools.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\owenf\.nuget\packages\newtonsoft.json\13.0.1-beta1</PkgNewtonsoft_Json>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\owenf\.nuget\packages\fsharp.core\5.0.0</PkgFSharp_Core>
+    <PkgFSharp_Json Condition=" '$(PkgFSharp_Json)' == '' ">C:\Users\owenf\.nuget\packages\fsharp.json\0.4.0</PkgFSharp_Json>
     <PkgFSharp_Compiler_Tools Condition=" '$(PkgFSharp_Compiler_Tools)' == '' ">C:\Users\owenf\.nuget\packages\fsharp.compiler.tools\10.2.3</PkgFSharp_Compiler_Tools>
     <PkgFantomas Condition=" '$(PkgFantomas)' == '' ">C:\Users\owenf\.nuget\packages\fantomas\4.4.0-beta-004</PkgFantomas>
   </PropertyGroup>

@@ -1,0 +1,73 @@
+2021-02-08 21:02:27.793 +00:00 [WRN] 
+
+
+
+2021-02-08 21:02:28.419 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-08 21:02:28.747 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-08 21:02:30.623 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-08 21:02:39.124 +00:00 [WRN]         ---****0 CMD [Bot] (Ø_'s server::goobot-things::Ø_) Thread:8 "!!search yoyoma"
+2021-02-08 21:02:39.152 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:8
+2021-02-08 21:02:39.171 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:8
+2021-02-08 21:02:39.173 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:8
+2021-02-08 21:02:39.204 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-08 21:02:39.234 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:8
+2021-02-08 21:02:40.049 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:8
+2021-02-08 21:02:42.634 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:6
+2021-02-08 21:02:42.655 +00:00 [INF] Exe Void MoveNext() Thread:6
+2021-02-08 21:02:42.683 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-08 21:02:42.684 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:4 RhythmHelper.Data.Entities.Guild
+2021-02-08 21:02:42.685 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:8
+2021-02-08 21:02:42.686 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-08 21:02:42.692 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:5 RhythmHelper.Data.Entities.User
+2021-02-08 21:02:42.735 +00:00 [INF] 0Exe [Commands] SearchYoutube() Thread:8
+2021-02-08 21:03:30.783 +00:00 [WRN] 
+
+
+
+2021-02-08 21:03:30.960 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-08 21:03:31.681 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-08 21:03:33.877 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-08 21:04:24.698 +00:00 [WRN] 
+
+
+
+2021-02-08 21:04:25.291 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-08 21:04:25.532 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-08 21:04:29.044 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-08 21:06:02.287 +00:00 [WRN]         ---****0 CMD [Bot] (Ø_'s server::goobot-things::Ø_) Thread:8 "!!search yoyoma"
+2021-02-08 21:06:02.307 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:8
+2021-02-08 21:06:02.311 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:8
+2021-02-08 21:06:02.315 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:8
+2021-02-08 21:06:02.337 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-08 21:06:02.362 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:8
+2021-02-08 21:06:03.215 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:8
+2021-02-08 21:06:05.629 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:12
+2021-02-08 21:06:05.637 +00:00 [INF] Exe Void MoveNext() Thread:12
+2021-02-08 21:06:05.766 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:17 RhythmHelper.Data.Entities.User
+2021-02-08 21:06:05.769 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:17 RhythmHelper.Data.Entities.Guild
+2021-02-08 21:06:05.771 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:8
+2021-02-08 21:06:05.774 +00:00 [INF] Exe Void MoveNext() Thread:8
+2021-02-08 21:06:05.783 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:17 RhythmHelper.Data.Entities.User
+2021-02-08 21:06:05.985 +00:00 [INF] 0Exe [Commands] SearchYoutube() Thread:8
+2021-02-08 21:06:58.965 +00:00 [WRN] 
+
+
+
+2021-02-08 21:06:59.398 +00:00 [INF] Ctor [GetInfo] GetInfo() Thread:1
+2021-02-08 21:07:01.244 +00:00 [INF] Exe Void .ctor() Thread:1
+2021-02-08 21:07:03.420 +00:00 [DBG] Fin [GetInfo] GetInfo() Thread:1 "init repo"
+2021-02-08 21:07:23.279 +00:00 [WRN]         ---****0 CMD [Bot] (Ø_'s server::goobot-things::Ø_) Thread:9 "!!search yoyoma"
+2021-02-08 21:07:23.308 +00:00 [INF] 0Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:9
+2021-02-08 21:07:23.316 +00:00 [INF] 0Exe [Commands] NewCommand() Thread:9
+2021-02-08 21:07:23.328 +00:00 [INF] Exe [GetInfo] GetGuildAsync Thread:9
+2021-02-08 21:07:23.448 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-08 21:07:23.493 +00:00 [INF] EFC [GuildContext] Void OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder) Thread:9
+2021-02-08 21:07:24.773 +00:00 [INF] EFC [GuildContext] Void OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder) Thread:9
+2021-02-08 21:07:27.002 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4
+2021-02-08 21:07:27.005 +00:00 [INF] Exe Void MoveNext() Thread:4
+2021-02-08 21:07:27.013 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:4 RhythmHelper.Data.Entities.User
+2021-02-08 21:07:27.026 +00:00 [DBG] Rtn [GetInfo] GetGuildAsync Thread:4 RhythmHelper.Data.Entities.Guild
+2021-02-08 21:07:27.028 +00:00 [INF] Exe [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:9
+2021-02-08 21:07:27.030 +00:00 [INF] Exe Void MoveNext() Thread:9
+2021-02-08 21:07:27.054 +00:00 [DBG] Rtn [GetInfo] GetUserAsync(SocketMessage socketMessage) Thread:15 RhythmHelper.Data.Entities.User
+2021-02-08 21:07:27.086 +00:00 [INF] 0Exe [Commands] SearchYoutube() Thread:9

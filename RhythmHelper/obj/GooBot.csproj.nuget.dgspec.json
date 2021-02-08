@@ -49,9 +49,19 @@
               "version": "[5.0.0, )",
               "generatePathProperty": true
             },
+            "FSharp.Json": {
+              "target": "Package",
+              "version": "[0.4.0, )",
+              "generatePathProperty": true
+            },
             "Fantomas": {
               "target": "Package",
               "version": "[4.4.0-beta-004, )",
+              "generatePathProperty": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1-beta1, )",
               "generatePathProperty": true
             }
           },

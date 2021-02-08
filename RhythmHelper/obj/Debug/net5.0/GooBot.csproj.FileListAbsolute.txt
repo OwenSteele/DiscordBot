@@ -204,3 +204,4 @@ C:\Users\owenf\source\repos\GooBotDiscord\RhythmHelper\bin\Debug\net5.0\zh-Hans\
 C:\Users\owenf\source\repos\GooBotDiscord\RhythmHelper\bin\Debug\net5.0\zh-Hant\FSharp.Core.resources.dll
 C:\Users\owenf\source\repos\GooBotDiscord\RhythmHelper\bin\Debug\net5.0\CommandMethods.dll
 C:\Users\owenf\source\repos\GooBotDiscord\RhythmHelper\bin\Debug\net5.0\CommandMethods.pdb
+C:\Users\owenf\source\repos\GooBotDiscord\RhythmHelper\bin\Debug\net5.0\FSharp.Json.dll
