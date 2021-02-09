@@ -1,7 +1,8 @@
 ﻿module BotMethods
 open Microsoft.FSharp.Core
+open System.Text.RegularExpressions
 
-type YTVideo(title : string, published : string, channel : string, videoLength : string, viewsCount : string, link : string, charPosition : int) =
+type YTVideo(title : string, published : string, channel : string, videoLength : string, shortTime : string, viewsCount : string, link : string) =
     let validString str =        
         if System.String.IsNullOrWhiteSpace str then
             raise (System.ArgumentException("Properties cannot be null"))
@@ -16,13 +17,13 @@ type YTVideo(title : string, published : string, channel : string, videoLength :
     member val Published = published with get, set
     member val Channel = channel with get, set
     member val Time = videoLength with get, set
+    member val ShortTime = System.TimeSpan.Parse shortTime with get, set
     member val Views = viewsCount with get, set
     member val Link = link with get, set
-    member val CharPosition = charPosition with get, set
 
 let FindProp (section : string) (start : string) (finish : string) : string =     
     let startPos = section.IndexOf(start) + start.Length
-    section.[startPos..section.IndexOf(finish, startPos)]
+    section.[startPos..(section.IndexOf(finish, startPos)-1)]
 
 let VideoEndPos (section : string) (nav :string) = section.IndexOf(nav) + nav.Length
 
@@ -47,17 +48,26 @@ let GetPageData (searchTerm : string) : string =
 
     data.[data.IndexOf("estimatedResults")..]
 
+let FormatTime (time : string) =
+    match Regex.Matches(time, ":").Count with
+    | 2 ->  time
+    | 1 -> sprintf "00:%s" time
+    | _ -> sprintf "00:00:%s" time
+
+
 let GetVideo (pageSection) : YTVideo =   
 
     let title = FindProp pageSection "\"title\":{\"runs\":[{\"text\":\"" "\"}]" 
     let channel = FindProp pageSection "\"longBylineText\":{\"runs\":[{\"text\":\"" "\","
     let published = FindProp pageSection "\"publishedTimeText\":{\"simpleText\":\"" "\"}"
-    let length = FindProp pageSection "\"lengthText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"" "\"}"
+    let length = FindProp pageSection "\"lengthText\":{\"accessibility\":{\"accessibilityData\":{\"label\":\"" ":{"
+    let time = FindProp length "" "\"}},"
+    let shortTime = FormatTime <| FindProp length "},\"simpleText\":\"" "\"},"
     let view = FindProp pageSection "\"viewCountText\":{\"simpleText\":\"" "\"}"
     let nav = FindProp pageSection "\"navigationEndpoint\":{\"" "\"}},"
-    let link = FindProp nav "\"url\":\"" "\","
+    let link = "/watch" + FindProp pageSection "\"url\":\"/watch" "\","
 
-    YTVideo(title,channel,published,length,view,link, VideoEndPos pageSection nav)
+    YTVideo(title,channel,published,time,shortTime,view,link)
 
 let MatchWord (search : string) (word : string) =
     match search.ToLower() with
@@ -73,11 +83,13 @@ let RestrictCheck (title : string) (searchTerm : string) (restriction : string) 
 
     title.Split ' ' |> Array.filter (fun w -> MatchWord searchTerm w) |> Array.length |> (fun x -> x >= r)
 
-//let TimeUnit (value : string) (unit : string) =
-//let VideoBounds (length : string) (min : System.TimeSpan) (max : System.TimeSpan) =
-     
-let GetVideos (limit : int) (restrict : string) (search : string) (min : System.TimeSpan) (max : System.TimeSpan) : YTVideo[] =
-    
+let VideoBounds (videoTime : System.TimeSpan) (min : System.TimeSpan) (max : System.TimeSpan) =
+    match videoTime with
+    | t when t > max || t < min -> false
+    | _ -> true
+
+let GetVideos (restrict : string) (search : string) (min : System.TimeSpan) (max : System.TimeSpan) : YTVideo[] =
     let pageJson = GetPageData search
     [| for section in pageJson.Split ",{\"videoRenderer\":{" -> GetVideo section |]
     |> Array.filter (fun video -> RestrictCheck video.Title search restrict)
+    |> Array.filter (fun video -> VideoBounds video.ShortTime min max)

@@ -13,7 +13,6 @@ namespace RhythmHelper
     {
         private DiscordSocketClient _client;
         private GetInfo _info;
-        private BotMethodsNative _methods;
 
         private int _message = 0;
 
@@ -32,8 +31,6 @@ namespace RhythmHelper
             Log.Warning("\n\n\n");
 
             _info = new();
-
-            _methods = new();
 
             _client = new();
 
@@ -74,7 +71,7 @@ namespace RhythmHelper
 
             try
             {
-                var handler = new Commands(socketMessage, ref _info, _methods, msgVal);
+                var handler = new Commands(socketMessage, ref _info, msgVal);
                 result = handler.NewCommand();
 
                 if (string.IsNullOrWhiteSpace(result)) return Task.CompletedTask;
@@ -82,7 +79,9 @@ namespace RhythmHelper
             }
             catch (Exception ex)
             {
-                Log.Error($"---ERROR [Bot] ({(guildName ?? "GuildNameNull")}) ({socketMessage.Author.Username}) Thread:{Thread.CurrentThread.ManagedThreadId} Error: '{ex.Message}' \"{result.Replace("\n", " [CRLF] ")}\"");
+                var print = string.IsNullOrWhiteSpace(result) ? "" : result.Replace("\n", " [CRLF] ");
+
+                Log.Error($"---ERROR [Bot] ({(guildName ?? "GuildNameNull")}) ({socketMessage.Author.Username}) Thread:{Thread.CurrentThread.ManagedThreadId} Error: '{ex.Message}' \"{print}\"");
             }
 
             Log.Warning($"        ---****{msgVal} MSG [Bot] ({(guildName ?? "GuildNameNull")}::{(channel.Name ?? "channelNameNull")}::{socketMessage.Author.Username}) Thread:{Thread.CurrentThread.ManagedThreadId} \"{result.Replace("\n", " [CRLF] ")}\"");

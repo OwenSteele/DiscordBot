@@ -19,7 +19,6 @@ namespace RhythmHelper
     {
         private readonly SocketMessage _socketMessage;
         private readonly GetInfo _info;
-        private readonly BotMethodsNative _methods;
         private readonly Dictionary<string, (string, Func<string>)> _allCommands;
 
         private Guild _guild;
@@ -30,13 +29,12 @@ namespace RhythmHelper
 
         public int MsgVal { get; }
 
-        public Commands(SocketMessage socketMessage, ref GetInfo info, BotMethodsNative methods, int msgVal)
+        public Commands(SocketMessage socketMessage, ref GetInfo info, int msgVal)
         {
             Log.Information($"{MsgVal}Ctor [Commands] Commands(SocketMessage socketMessage, ref GetInfo info, BotMethods methods) Thread:{Thread.CurrentThread.ManagedThreadId}");
 
             _socketMessage = socketMessage;
             _info = info;
-            _methods = methods;
             _msg = null;
             _mentions = null;
 
@@ -610,22 +608,24 @@ namespace RhythmHelper
 
             if (string.IsNullOrWhiteSpace(_msg)) return "Must enter something to search for!";
 
-            var videos = GetVideos(_guild.Limit, _guild.Restrict.ToString(), _msg, _guild.VideoLengthMin,_guild.VideoLengthMax);
+            var videos = GetVideos(_guild.Restrict.ToString(), _msg, _guild.VideoLengthMin,_guild.VideoLengthMax);
 
             var videosInfo = new List<string>();
 
             var messageLength = 0;
+            var videoCount = 0;
 
             foreach (var video in videos)
             {
                 string partial = $"{videosInfo.Count + 1}- ***{video.Title}*** By {video.Channel} (**{video.Published}**), {video.Views}, **{video.Time}** - *Copy this to play*:" +
                     $"```!play www.youtube.com{video.Link}```";
 
-                if (messageLength + partial.Length >= 2000) break;
+                if (messageLength + partial.Length >= 2000 || videoCount >= _guild.Limit) break;
 
                 videosInfo.Add(partial);
 
                 messageLength += partial.Length;
+                videoCount++;
             }
 
             Log.Debug($"{MsgVal}Rtn [Commands] SearchYoutube() Thread:{Thread.CurrentThread.ManagedThreadId} \"videos: {videosInfo.Count}\"");
