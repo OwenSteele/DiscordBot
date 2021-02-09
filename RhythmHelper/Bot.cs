@@ -38,7 +38,7 @@ namespace RhythmHelper
 
             _client.Log += BotLog;
 
-            var token = File.ReadAllText("RHToken.txt");
+            var token = File.ReadAllText(@"..\..\..\RHToken.txt");
 
             await _client.LoginAsync(TokenType.Bot, token);
             await _client.StartAsync();
