@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="Discord.Net" Version="2.3.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.2">
       <PrivateAssets>all</PrivateAssets>
@@ -20,6 +19,10 @@
   <ItemGroup>
     <ProjectReference Include="..\CommandMethods\CommandMethods.fsproj" />
     <ProjectReference Include="..\RhythmHelper.Data\GooBot.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Feedback\" />
   </ItemGroup>
 
 </Project>

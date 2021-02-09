@@ -113,3 +113,9 @@ ServiceFabricBackup/
 
 # Local History for Visual Studio
 .localhistory/
+
+RHToken.txt
+
+*log.txt
+
+*botfeedback.txt

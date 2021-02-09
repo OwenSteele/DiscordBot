@@ -1,3 +1,0 @@
-
-02/03/2021 18:17:25 - Guild: '?_'s server' User: '?_' ('0921')
-  Message: 'test'

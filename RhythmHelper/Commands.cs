@@ -647,7 +647,7 @@ namespace RhythmHelper
             sb.Append($"User: '{_user.Username}' ('{_user.Discriminator}')");
             sb.Append($"\n  Message: '{_msg}'");
 
-            var path = @$"..\..\..\Feedback\botfeedback {DateTime.Now:yyyy-MM-dd}.txt";
+            var path = @$"..\..\..\Feedback\{DateTime.Now:yyyy-MM-dd} botfeedback.txt";
 
             try
             {
